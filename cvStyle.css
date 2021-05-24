@@ -1,0 +1,42 @@
+#container{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: -3%;
+    background-color: #D1E4F3;
+    max-width: 277px;
+    padding: 1%;
+    width: 100%;
+    text-align: center;
+    height: 500px;
+}
+
+#cvImg{
+    width: 90%;
+    margin: 5%;
+    margin-top: 10%;
+}
+
+.downloadButtons{
+    position: absolute;
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border:1px solid #4b6cc1;
+    padding-top: 3%; 
+    padding-bottom: 3%;
+    padding-left: 4%;
+    padding-right: 4%;
+    color: white;
+    background-color: #4b6cc1;
+}
+
+#eng{
+    margin-left: -94%;
+    margin-top: 135%;
+    width: 80%;
+}
+
+#ned{
+    margin-left: -94%;
+    margin-top: 155%;
+    width: 80%;
+}

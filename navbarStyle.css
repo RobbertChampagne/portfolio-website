@@ -1,0 +1,55 @@
+#hamburgerMenu{
+    margin-left: 80%;
+    margin-top: 6%;
+    position: absolute;
+    outline: none !important; /*no border around button after clicking*/
+    border: none;
+    background-color: inherit;
+}
+
+#navbarDiv {
+    position: absolute;
+    width: 150px;
+    height: 110%;
+    background: black;/*383838*/
+    z-index: 6; /*on top of fill*/
+    transition: .7s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+    opacity: 0.9;
+    top: 0%;
+}
+
+#navbarFill{
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    background: #A9A9A9;
+    z-index: 5; /*on top of all*/
+    opacity: 0.7;
+    transition: .9s;
+    top: 0%;
+}
+
+#navbarDiv ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+#navbarDiv ul li{
+    margin-left: -20%;
+    margin-top: 30%;
+}
+  
+.show {
+    left: 0;
+}
+
+.hide{
+    left: -500px;
+}
+
+
+    
+  

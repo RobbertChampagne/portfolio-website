@@ -1,0 +1,65 @@
+
+#container{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: -3%;
+    background-color: #D1E4F3;
+    padding: 1%;
+    width: 100%;
+}
+
+#portfolioTitle{
+    margin-left: 1%;
+    color: #4b6cc1;
+}
+
+#filterButtons{
+    padding-bottom: 10%;
+}
+
+.projectChoiceButtons{
+    background-color: white;
+    border: none;
+    margin-left: 2%;
+    height: 30px;
+    color: grey;
+    outline: none !important; /*no border around button after clicking*/
+}
+
+#showAll{
+    color: white;
+    background-color: #4b6cc1;
+}
+
+#projectContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2%;
+}
+
+.projectSquare{
+    background-color: white;
+    border:1px solid #C9AFBC;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5%;
+    margin-bottom: 5%;
+    width: 270px;
+    color: grey;
+    text-decoration: none;
+}
+
+.projectImg{
+    width: 100%;
+}
+
+@media screen and (min-width: 374px) { /*from and bigger*/ /*iphone x*/
+
+
+
+
+}

@@ -1,0 +1,175 @@
+body{
+    height: 800px;
+    padding-bottom: 5%;
+}
+
+#back{
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 6%;
+    position: absolute;
+    outline: none !important; /*no border around button after clicking*/
+    border: none;
+}
+
+#container{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: -2%;
+    background-color: #D1E4F3;
+    max-width: 277px;
+    padding: 1%;
+    width: 270px;
+    height: 700px;
+}
+
+#textSquare{
+    margin-left: 7%;
+    margin-top: 60%;
+    height: 215px;
+    width: 215px;
+    font-size: 14px;
+    background-color: #28282B;
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border:1px solid #C9AFBC;
+    color: white;
+    z-index: 3;
+    padding: 2%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+#githubButton{
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border:1px solid white;
+    padding-top: 3%; 
+    padding-bottom: 3%;
+    padding-left: 4%;
+    padding-right: 4%;
+    color: white;
+}
+
+#leftUpImg{
+    /*margin-left: 2%;*/
+    margin-top: 15%;
+    /*height: 200px;*/
+    width: 200px;
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border:1px solid #C9AFBC;
+
+    transition: .9s ease;/*sliding*/
+}
+
+#rightImg{
+   /* margin-left: 23%;*/
+    margin-top: 160%;
+    /*height: 200px;*/
+    width: 200px;
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border:1px solid #C9AFBC;
+    z-index: 2;
+
+    transition: .9s ease;/*sliding*/
+
+}
+
+#leftLowerImg{
+    /*margin-left: 2%;*/
+    margin-top: 195%;
+    /*height: 200px;*/
+    width: 200px;
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border:1px solid #C9AFBC;
+
+    transition: 0.9s ease;/*sliding*/
+
+}
+
+/*SLIDING ANIMATION*/
+.hideRightSlide{
+    margin-left: 150%;
+}
+
+.showRightSlide {  /*square slides in from the right when loading page*/
+    margin-left: 23%;
+}
+
+.hideLeftSlide{
+    margin-left: -100%;
+}
+
+.showLeftSlide {  /*square slides in from the left when loading page*/
+    margin-left: 5%;
+}
+
+
+/*background when image is enlarged*/
+#imageBg{
+    position: absolute;
+    width: 110%;
+    height: 120%;
+    background: black;
+    z-index: 3; /*on top of all*/
+    opacity: 0.8;
+    top: 0%;
+    display: none;
+}
+
+.showImageBg {
+    left: 0;
+}
+
+.hideImageBg{
+    left: -400px;
+}
+
+@media screen and (min-width: 374px) { /*from and bigger*/ /*iphone x*/
+
+    body{
+        height: 1100px;
+        padding-bottom: 5%;
+        width: 375px;
+    }
+
+    #container{
+        margin-left: -2%;
+        max-width: 375px;
+        width: 100%;
+        height: 950px;
+    }
+    
+    #textSquare{
+        width: 315px;
+    }
+
+    #languageDesc{
+        margin-bottom: 8%;
+    }
+      
+    #leftUpImg{
+        width: 300px;
+    }
+    
+    #rightImg{
+        margin-top: 140%;
+        width: 300px;
+    }
+    
+    #leftLowerImg{
+        margin-top: 190%;
+        width: 300px;
+    }
+    
+    /*SLIDING ANIMATION*/
+
+    .showRightSlide {  /*square slides in from the right when loading page*/
+        margin-left: 20%;
+    }
+
+    
+}

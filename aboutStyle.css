@@ -1,0 +1,226 @@
+#container{
+    height: 1000px;
+    padding-bottom: 5%;
+}
+
+#TitleAboutMe{
+    color: #4b6cc1;
+    margin-bottom: -2%;
+    font-size: 25px;
+}
+
+p {
+    font-size: 18px;
+}
+
+#upperSquare{
+    background-color: #D1E4F3;
+    height: 300px;
+    width: 240px;
+    position: absolute;
+    margin-top: 22%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    transition: .9s ease;/*sliding*/
+}
+
+.hideUpperSquare{
+    margin-left: -100%;
+}
+
+.showUpperSquare {  /*square slides in from the left when loading page*/
+    margin-left: -3%;
+}
+
+#middleSquare{
+    background-color: #D1E4F3;
+    width: 260px;
+    height: 280px;
+    position: absolute;
+    margin-top: 150%;
+    left: 0%;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+}
+
+#lowerSquare{
+    background-color: #D1E4F3;
+    width: 240px;
+    height: 230px;
+    position: absolute;
+    margin-top: 270%;
+    margin-bottom: 30%;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+    transition: .9s ease-out; /*sliding*/
+}
+
+.hideLowerSquare{
+    margin-left: 150%;
+}
+
+.showLowerSquare {  /*square slides in from the right when loading page*/
+    margin-left: 5%;
+}
+
+
+.middleDots{
+    width: 300px;
+}
+
+.smallDots{
+    width: 200px;
+}
+
+#phpDot{
+    position: absolute;
+    width: 400px;
+    margin-top: 10%;
+    margin-left: -45%;
+    display: none;
+}
+
+#pythonDot{
+    position: absolute;
+    width: 350px;
+    margin-left: -10%;
+    display: none;
+    margin-top: 2%;
+}
+
+#jsDot{
+    position: absolute;
+    margin-top: 25%;
+    width: 400px;
+    display: none;
+    margin-left: -5%;
+}
+
+#htmlDot{
+    position: absolute;
+    margin-top: -8%;
+    display: none;
+    margin-left: -22%;
+}
+
+#cssDot{
+    position: absolute;
+    margin-top: 45%;
+    display: none;
+    margin-left: -15%;
+}
+
+#sqlDot{
+    position: absolute;
+    margin-top: 60%;
+    display: none;
+    margin-left: 25%;
+}
+
+#uiuxDot{
+    position: absolute;
+    margin-top: 12%;
+    display: none;
+    margin-left: 30%;
+}
+
+#cDot{
+    display: none;
+    position: absolute;
+    margin-top: -7%;
+    margin-left: 45%;
+}
+
+#javaDot{
+    position: absolute;
+    display: none;
+    margin-top: 50%;
+    margin-left: -22%;
+}
+
+
+
+/*NAVBAR CSS*/
+#navbarDiv {
+    height: 170%;
+}
+
+#navbarFill{
+    height: 170%;
+}
+
+@media screen and (min-width: 374px) { /*from and bigger*/ /*iphone x*/
+    #container{
+        height: 1100px;
+        padding-bottom: 5%;
+    }
+
+    #upperSquare{
+        height: 280px;
+        width: 290px;
+    }
+
+    #middleSquare{
+        width: 100%;
+        margin-top: 120%;
+        margin-left: 0%;
+    }
+    
+    #lowerSquare{
+        width: 290px;
+        height: 230px;
+        margin-top: 220%;
+        margin-bottom: 40%;
+    }
+
+    .showLowerSquare {  /*square slides in from the right when loading page*/
+        margin-left: 15%;
+    }
+
+    #phpDot{
+        margin-top: 10%;
+        margin-left: -25%;
+    }
+    
+    #pythonDot{
+        margin-left: -5%;
+        margin-top: 2%;
+    }
+    
+    #jsDot{
+        margin-top: 25%;
+        margin-left: 0%;
+    }
+    
+    #htmlDot{
+        margin-top: -8%;
+        margin-left: -22%;
+    }
+    
+    #cssDot{
+        margin-top: 40%;
+        margin-left: -10%;
+    }
+    
+    #sqlDot{
+        margin-top: 30%;
+        margin-left: 40%;
+    }
+    
+    #uiuxDot{
+        margin-top: 12%;
+        margin-left: 30%;
+    }
+    
+    #cDot{
+        margin-top: -2%;
+        margin-left: 45%;
+    }
+    
+    #javaDot{
+        margin-top: 35%;
+        margin-left: -15%;
+    }
+    
+
+}

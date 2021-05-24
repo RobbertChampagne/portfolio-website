@@ -1,0 +1,56 @@
+body{
+    height: 900px;
+    padding-bottom: 5%;
+}
+
+#container{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: -3%;
+    background-color: #D1E4F3;
+    max-width: 277px;
+    padding-left: 5%;
+    width: 100%;
+    height: 800px;
+}
+
+#contactTitel{
+    color: #4b6cc1;
+    margin-bottom: 5%;
+}
+
+.inputfields{
+    width: 90%;
+    margin-top: 2%;
+}
+
+#submitButton{
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border:1px solid #4b6cc1;
+    padding-top: 3%; 
+    padding-bottom: 3%;
+    padding-left: 4%;
+    padding-right: 4%;
+    color: white;
+    background-color: #4b6cc1;
+}
+
+#socialTitel{
+    color: #4b6cc1;
+    margin-top: 20%;
+}
+
+.socialmediaIcons{
+    width: 15%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 5%;
+}
+
+#mapImg{
+    width: 100%;
+    margin-left: -4%;
+    margin-top: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
