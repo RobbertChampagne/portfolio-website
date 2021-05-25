@@ -1,10 +1,15 @@
 #hamburgerMenu{
-    margin-left: 80%;
+    margin-left: 75%;
     margin-top: 6%;
     position: absolute;
     outline: none !important; /*no border around button after clicking*/
     border: none;
     background-color: inherit;
+    width: 50px;
+}
+
+#hamburgerMenuImage{
+    width: 100%;
 }
 
 #navbarDiv {
@@ -50,6 +55,27 @@
     left: -500px;
 }
 
+@media screen and (min-width: 340px) { /*from and bigger  Pixel 2*/ 
+    .hide{
+        left: -500%;
+    }
+}
 
+
+@media screen and (min-width: 411px) { /*from and bigger  Pixel 2*/ 
+
+    #navbarDiv {
+        width: 50%;
+    }
+    
+    #navbarDiv ul li a {
+        font-size: 25px;
+    }
+    
+    #navbarDiv ul li{
+        margin-left: -10%;
+    }
+    
+}
     
   

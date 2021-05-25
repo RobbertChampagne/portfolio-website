@@ -3,7 +3,6 @@
     margin-top: 20%;
     margin-left: -3%;
     background-color: #D1E4F3;
-    max-width: 277px;
     padding: 1%;
     width: 100%;
     text-align: center;
@@ -39,4 +38,49 @@
     margin-left: -94%;
     margin-top: 155%;
     width: 80%;
+}
+
+@media screen and (min-width: 320px) { /*from and bigger*/ /*iphone 5/SE*/
+
+    body{
+        height: 700px;
+    }
+
+    #container{
+        height: 600px;
+    }
+
+}
+
+@media screen and (min-width: 360px) { /*from and bigger*/ /*moto G4, Galaxy S5 */
+    body{
+        height: 750px;
+    }
+
+    #container{
+        height: 650px;
+    }
+}
+
+@media screen and (min-width: 375px) { /*from and bigger Iphone 6/7/8*/ 
+
+    body{
+        height: 800px;
+    }
+
+    #container{
+        height: 680px;
+    }
+}
+
+@media screen and (min-width: 411px) { /*from and bigger  Pixel 2*/ 
+
+    body{
+        height: 850px;
+    }
+
+    #container{
+        height: 730px;
+    }
+
 }

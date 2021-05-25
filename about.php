@@ -32,9 +32,7 @@
             <img src="images\sql.png" class="middleDots skill" id="sqlDot" alt="">
             <img src="images\uiux.png" class="middleDots skill" id="uiuxDot" alt="">
             <img src="images\c.png" class="smallDots skill" id="cDot" alt="">
-            <img src="images\java.png" class="smallDots skill" id="javaDot" alt="">
-
-            
+            <img src="images\java.png" class="smallDots skill" id="javaDot" alt="">   
         </div>
 
         <div id="lowerSquare" class="hideLowerSquare">

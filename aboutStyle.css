@@ -1,3 +1,4 @@
+
 #container{
     height: 1000px;
     padding-bottom: 5%;
@@ -63,79 +64,67 @@ p {
     margin-left: 5%;
 }
 
+.bigDots{
+    position: absolute;
+    width: 70px;
+    display: none;
+}
 
 .middleDots{
-    width: 300px;
+    position: absolute;
+    display: none;
+    width: 50px;
 }
 
 .smallDots{
-    width: 200px;
+    width: 30px;
+    position: absolute;
+    display: none;
 }
 
 #phpDot{
-    position: absolute;
-    width: 400px;
-    margin-top: 10%;
-    margin-left: -45%;
-    display: none;
+    margin-top: 30%;
+    margin-left: 15%;
 }
 
 #pythonDot{
-    position: absolute;
-    width: 350px;
-    margin-left: -10%;
-    display: none;
-    margin-top: 2%;
+    margin-left: 30%;
+    margin-top: 5%;
 }
 
 #jsDot{
-    position: absolute;
     margin-top: 25%;
-    width: 400px;
-    display: none;
-    margin-left: -5%;
+    margin-left: 50%;
 }
 
 #htmlDot{
-    position: absolute;
-    margin-top: -8%;
-    display: none;
-    margin-left: -22%;
+    margin-top: 8%;
+    margin-left: 8%;
 }
 
 #cssDot{
-    position: absolute;
-    margin-top: 45%;
-    display: none;
-    margin-left: -15%;
+    margin-top: 5%;
+    margin-left: 60%;
 }
 
 #sqlDot{
-    position: absolute;
-    margin-top: 60%;
-    display: none;
-    margin-left: 25%;
+    margin-top: 50%;
+    margin-left: 40%;
 }
 
 #uiuxDot{
-    position: absolute;
-    margin-top: 12%;
-    display: none;
-    margin-left: 30%;
+    margin-top: 55%;
+    margin-left: 8%;
 }
 
 #cDot{
-    display: none;
-    position: absolute;
-    margin-top: -7%;
-    margin-left: 45%;
+    margin-top: 55%;
+    margin-left: 70%;
 }
 
 #javaDot{
-    position: absolute;
-    display: none;
-    margin-top: 50%;
-    margin-left: -22%;
+    margin-top: 25%;
+    margin-left: 78%;
 }
 
 
@@ -149,7 +138,8 @@ p {
     height: 170%;
 }
 
-@media screen and (min-width: 374px) { /*from and bigger*/ /*iphone x*/
+@media screen and (min-width: 320px) { /*from and bigger*/ /*iphone 5/SE*/
+   
     #container{
         height: 1100px;
         padding-bottom: 5%;
@@ -162,65 +152,103 @@ p {
 
     #middleSquare{
         width: 100%;
-        margin-top: 120%;
+        margin-top: 130%;
         margin-left: 0%;
     }
     
     #lowerSquare{
         width: 290px;
         height: 230px;
-        margin-top: 220%;
+        margin-top: 240%;
         margin-bottom: 40%;
+    }
+
+    .showLowerSquare {  /*square slides in from the right when loading page*/
+        margin-left: 5%;
+    }
+
+    .bigDots{
+        width: 80px;
+    }
+    
+    .middleDots{
+        width: 60px;
+    }
+    
+    .smallDots{
+        width: 40px;
+    }
+    
+}
+
+@media screen and (min-width: 360px) { /*from and bigger*/ /*moto G4, Galaxy S5 */
+    #container{
+        height: 1100px;
+        padding-bottom: 5%;
+    }
+
+    #middleSquare{
+        margin-top: 120%;
+    }
+    
+    #lowerSquare{
+        margin-top: 220%;
+        height: 230px;
+    }
+
+    .showLowerSquare {  /*square slides in from the right when loading page*/
+        margin-left: 12%;
+    }
+
+    .bigDots{
+        width: 90px;
+    }
+    
+    .middleDots{
+        width: 70px;
+    }
+    
+    .smallDots{
+        width: 50px;
+    }
+
+}
+
+@media screen and (min-width: 375px) { /*from and bigger  Iphone 6/7/8*/ 
+    #middleSquare{
+        padding-bottom: 10%;
+    }
+
+    #lowerSquare{
+        margin-top: 225%;
     }
 
     .showLowerSquare {  /*square slides in from the right when loading page*/
         margin-left: 15%;
     }
 
-    #phpDot{
-        margin-top: 10%;
-        margin-left: -25%;
+}
+
+@media screen and (min-width: 411px) { /*from and bigger  Pixel 2*/ 
+    
+    #upperSquare{
+        height: 280px;
+        padding-left: 13px;
+        width: 350px;
     }
     
-    #pythonDot{
-        margin-left: -5%;
-        margin-top: 2%;
+    #middleSquare{
+        margin-top: 105%;
+        padding-bottom: 10%;
     }
-    
-    #jsDot{
-        margin-top: 25%;
-        margin-left: 0%;
+
+    #lowerSquare{
+        width: 350px;
+        margin-top: 195%;
     }
-    
-    #htmlDot{
-        margin-top: -8%;
-        margin-left: -22%;
+
+    .showLowerSquare {  /*square slides in from the right when loading page*/
+        margin-left: 13%;
     }
-    
-    #cssDot{
-        margin-top: 40%;
-        margin-left: -10%;
-    }
-    
-    #sqlDot{
-        margin-top: 30%;
-        margin-left: 40%;
-    }
-    
-    #uiuxDot{
-        margin-top: 12%;
-        margin-left: 30%;
-    }
-    
-    #cDot{
-        margin-top: -2%;
-        margin-left: 45%;
-    }
-    
-    #javaDot{
-        margin-top: 35%;
-        margin-left: -15%;
-    }
-    
 
 }

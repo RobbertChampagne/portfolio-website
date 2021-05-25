@@ -57,9 +57,22 @@
     width: 100%;
 }
 
-@media screen and (min-width: 374px) { /*from and bigger*/ /*iphone x*/
+@media screen and (min-width: 320px) { /*from and bigger*/ /*iphone 5/SE*/
 
-
+    #portfolioTitle{
+        font-size: 40px;
+        margin-left: 2%;
+    }
+    
+    #filterButtons{
+        margin-left: 2%;
+    }
+    
+    .projectChoiceButtons{
+        margin-left: 2%;
+        height: 35px;
+        font-size: 18px;
+    }
 
 
 }

@@ -13,8 +13,8 @@ function loaded(){
 
     //let games = {getValue: "games", title: "Games Platform", desc: "Simple game platform where games can be displayed.", sec_desc: "register/login, highscores.", third_desc:"HTML, CSS, JAVASCRIPT, PHP, SQL", img_one: "images/games/highscore.png", img_two: "images/games/register.png", img_three: "images/games/gamesoverview.png", link:"https://github.com/RobbertChampagne/simple_games_website"};
     let imageCollector = {getValue: "imageCollector", title: "Image Collector", desc: "Simple GUi to download images from Instagram.", sec_desc: "login/save user credentials in DB.", third_desc:"PYTHON, TKINTER, SELENIUM, SQLITE", img_one: "images/image_collector/fileviewer.png", img_two: "images/image_collector/inlog.png", img_three: "images/image_collector/search.png", link:"https://github.com/RobbertChampagne/tkinter_instagram_image_collector_gui"};
-    let newsArticleCollector = {getValue: "newsArticleCollector", title: "News Article Collector", desc: "Simple GUi to get the search link of news articles.", sec_desc: "&nbsp;", third_desc:"PYTHON, TKINTER, SELENIUM", img_one: "images/news_article_collector/output.png", img_two: "images/news_article_collector/search_article_1.png", img_three: "images/news_article_collector/search_article.png", link:"https://github.com/RobbertChampagne/News_Article_Web_Scraper"};
-    let weightTracker = {getValue: "weightTracker", title: "Weight Tracker", desc: "Simple GUi to track weight.", sec_desc: "&nbsp;", third_desc:"PYTHON, TKINTER, MATPLOTLIB", img_one: "images/weight_tracker/pic3.png", img_two: "images/weight_tracker/pic2.png", img_three: "images/weight_tracker/pic4.png", link:"https://github.com/RobbertChampagne/weight_tracker_app"};
+    let newsArticleCollector = {getValue: "newsArticleCollector", title: "News Article Collector", desc: "Simple GUi to get the search link of news articles.", sec_desc: "", third_desc:"PYTHON, TKINTER, SELENIUM", img_one: "images/news_article_collector/output.png", img_two: "images/news_article_collector/search_article_1.png", img_three: "images/news_article_collector/search_article.png", link:"https://github.com/RobbertChampagne/News_Article_Web_Scraper"};
+    let weightTracker = {getValue: "weightTracker", title: "Weight Tracker", desc: "Simple GUi to track weight.", sec_desc: "", third_desc:"PYTHON, TKINTER, MATPLOTLIB", img_one: "images/weight_tracker/pic3.png", img_two: "images/weight_tracker/pic2.png", img_three: "images/weight_tracker/pic4.png", link:"https://github.com/RobbertChampagne/weight_tracker_app"};
     let webshop = {getValue: "webshop", title: "Webshop", desc: "Standard webshop.", sec_desc: "register/login, place orders, ...", third_desc:"PHP, HTML, CSS, JAVASCRIPT, SQLITE", img_one: "images/webshop/article.png", img_two: "images/webshop/cart.png", img_three: "images/webshop/shop.png", link:"https://github.com/RobbertChampagne/donut_webshop"};
     
     let projects = [/*games, */imageCollector, newsArticleCollector, weightTracker, webshop];
@@ -54,7 +54,7 @@ function loaded(){
             sec_desc.textContent = project.sec_desc;
             sec_desc.style.color = "lightgray";
             description.appendChild(sec_desc);
-
+            
             third_desc = document.createElement("p");
             third_desc.textContent = project.third_desc;
             third_desc.style.color = "lightgray";
@@ -78,6 +78,22 @@ function loaded(){
 
     document.getElementById("leftLowerImg").setAttribute("class", "showLeftSlide");
 
+
+    //when image is showing larger when clicked disable/enable scroll
+    function disableScroll() {
+        // Get the current page scroll position
+        scrollTop = 0 //to the top of the window
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+            // if any scroll is attempted, set this to the previous value
+            window.onscroll = function() {
+                window.scrollTo(scrollLeft, scrollTop);
+            };
+    }
+      
+    function enableScroll() {
+        window.onscroll = function() {};
+    }
+
     
     //show image larger when clicked
     function enlargeImageWhenClickedOn(event){
@@ -98,13 +114,15 @@ function loaded(){
             let windowWidth = document.getElementById("body").offsetWidth + 20 ;
             event.target.style.width = windowWidth + "px";
             event.target.style.marginLeft = "-3%";
-            event.target.style.marginTop = "70%";
+            event.target.style.marginTop = "50%";
             event.target.style.zIndex = "4";
 
             //add image background to cover rest of window
             let imageBg = document.getElementById("imageBg");
             imageBg.setAttribute("class", "showImageBg");
             imageBg.style.display = "block";
+
+            disableScroll();
 
         }else if(imageEnlarged){ //when image is showing
 
@@ -119,6 +137,8 @@ function loaded(){
             //remove image background 
             imageBg.setAttribute("class", "hideImageBg");
             imageBg.style.display = "none";
+
+            enableScroll();
 
         }
 

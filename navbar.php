@@ -1,4 +1,4 @@
-<button id="hamburgerMenu" ><img src="images\hamburger menu.png" alt=""></button>
+<button id="hamburgerMenu" ><img id="hamburgerMenuImage" src="images\hamburger menu.png" alt=""></button>
 
 <div id="navbarDiv" class="hide">
     <ul id="navbarUl">            

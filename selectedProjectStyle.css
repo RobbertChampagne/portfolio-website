@@ -17,9 +17,8 @@ body{
     margin-top: 20%;
     margin-left: -2%;
     background-color: #D1E4F3;
-    max-width: 277px;
     padding: 1%;
-    width: 270px;
+    width: 100%;
     height: 700px;
 }
 
@@ -112,7 +111,7 @@ body{
 #imageBg{
     position: absolute;
     width: 110%;
-    height: 120%;
+    height: 850px;
     background: black;
     z-index: 3; /*on top of all*/
     opacity: 0.8;
@@ -128,23 +127,24 @@ body{
     left: -400px;
 }
 
-@media screen and (min-width: 374px) { /*from and bigger*/ /*iphone x*/
+@media screen and (min-width: 320px) { /*from and bigger*/ /*iphone 5/SE*/
 
     body{
-        height: 1100px;
+        height: 900px;
         padding-bottom: 5%;
-        width: 375px;
     }
 
     #container{
         margin-left: -2%;
-        max-width: 375px;
-        width: 100%;
-        height: 950px;
+        height: 800px;
     }
     
     #textSquare{
-        width: 315px;
+        width: 280px;
+        margin-left: 2%;
+        margin-top: 50%;
+        height: 280px;
+        font-size: 18px;
     }
 
     #languageDesc{
@@ -152,6 +152,99 @@ body{
     }
       
     #leftUpImg{
+        margin-top: 10%;
+        width: 200px;
+    }
+    
+    #rightImg{
+        margin-top: 160%;
+        width: 200px;
+    }
+    
+    #leftLowerImg{
+        margin-top: 180%;
+        width: 200px;
+    }
+    
+    /*SLIDING ANIMATION*/
+
+    .showRightSlide {  /*square slides in from the right when loading page*/
+        margin-left: 33%;
+    }
+    .showLeftSlide {  /*square slides in from the left when loading page*/
+        margin-left: 3%;
+    }
+    
+    /*background when image is enlarged*/
+    #imageBg{
+        width: 110%;
+        height: 950px;
+    }
+
+}
+
+@media screen and (min-width: 360px) { /*from and bigger*/ /*moto G4, Galaxy S5 */
+
+    body{
+        height: 950px;
+    }
+
+    #container{
+        margin-left: -2%;
+        height: 850px;
+    }
+    
+    #textSquare{
+        width: 300px;
+        margin-left: 5%;
+        margin-top: 50%;
+    }
+      
+    #leftUpImg{
+        margin-top: 10%;
+        width: 250px;
+    }
+    
+    #rightImg{
+        margin-top: 150%;
+        width: 250px;
+    }
+    
+    #leftLowerImg{
+        margin-top: 190%;
+        width: 250px;
+    }
+    
+    /*SLIDING ANIMATION*/
+
+    .showRightSlide {  /*square slides in from the right when loading page*/
+        margin-left: 30%;
+    }
+    
+}
+
+@media screen and (min-width: 375px) { /*from and bigger Iphone 6/7/8*/ 
+
+    body{
+        height: 1000px;
+    }
+
+    #container{
+        height: 900px;
+    }
+
+}
+
+@media screen and (min-width: 411px) { /*from and bigger  Pixel 2*/ 
+
+    #textSquare{
+        width: 350px;
+        margin-left: 4%;
+        margin-top: 50%;
+    }
+      
+    #leftUpImg{
+        margin-top: 10%;
         width: 300px;
     }
     
@@ -168,8 +261,6 @@ body{
     /*SLIDING ANIMATION*/
 
     .showRightSlide {  /*square slides in from the right when loading page*/
-        margin-left: 20%;
+        margin-left: 25%;
     }
-
-    
 }
