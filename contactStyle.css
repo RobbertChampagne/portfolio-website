@@ -37,7 +37,7 @@ body{
 
 #socialTitel{
     color: #4b6cc1;
-    margin-top: 20%;
+    margin-top: 15%;
 }
 
 .socialmediaIcons{
@@ -51,7 +51,6 @@ body{
     margin-left: -4%;
     margin-top: 20%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 @media screen and (min-width: 320px) { /*from and bigger*/ /*iphone 5/SE*/
@@ -101,16 +100,24 @@ body{
 @media screen and (min-width: 375px) { /*from and bigger Iphone 6/7/8*/ 
 
     body{
-        height: 1050px;
+        height: 1000px;
         padding-bottom: 5%;
     }
 
     #container{
-        height: 950px;
+        height: 900px;
+    }
+
+    #socialTitel{
+        margin-top: 10%;
+    }
+
+    #mapImg{
+        margin-top: 13%;
     }
 }
 
-@media screen and (min-width: 411px) { /*from and bigger  Pixel 2*/ 
+@media screen and (min-width: 411px) { /*from and bigger  Pixel 2, iphone6/7/8 plus*/ 
 
     body{
         height:  1100px;
@@ -119,5 +126,10 @@ body{
     #container{
         height: 1000px;
     }
+
+}
+
+@media screen and (min-width: 540px) { /*from and bigger Surface Duo*/ 
+
 
 }

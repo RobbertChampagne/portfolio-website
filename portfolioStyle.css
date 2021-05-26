@@ -74,5 +74,29 @@
         font-size: 18px;
     }
 
+}
+
+@media screen and (min-width: 540px) { /*from and bigger Surface Duo*/ 
+    
+    #portfolioTitle{
+        font-size: 50px;
+        margin-left: 5%;
+        margin-bottom: 2%;
+    }
+    
+    #filterButtons{
+        margin-left: 4%;
+    }
+    
+    .projectChoiceButtons{
+        margin-left: 2%;
+        height: 50px;
+        width: 100px;
+        font-size: 20px;
+    }
+
+    #projectContainer{
+        margin-top: -2%;
+    }
 
 }

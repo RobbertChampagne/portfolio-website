@@ -235,7 +235,7 @@ body{
 
 }
 
-@media screen and (min-width: 411px) { /*from and bigger  Pixel 2*/ 
+@media screen and (min-width: 411px) { /*from and bigger  Pixel 2, iphone6/7/8 plus*/ 
 
     #textSquare{
         width: 350px;
@@ -263,4 +263,39 @@ body{
     .showRightSlide {  /*square slides in from the right when loading page*/
         margin-left: 25%;
     }
+}
+
+@media screen and (min-width: 540px) { /*from and bigger Surface Duo*/ 
+    body{
+        height: 1300px;
+    }
+
+    #container{
+        height: 1100px;
+    }
+
+    #back{
+        width: 10%;
+    }
+
+    #textSquare{
+        width: 400px;
+        margin-left: 10%;
+    }
+      
+    #leftUpImg{
+        width: 400px;
+    }
+    
+    #rightImg{
+        margin-top: 125%;
+        width: 400px;
+    }
+    
+    #leftLowerImg{
+        margin-top: 150%;
+        width: 400px;
+    }
+    
+
 }

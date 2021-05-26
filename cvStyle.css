@@ -43,6 +43,56 @@
 @media screen and (min-width: 320px) { /*from and bigger*/ /*iphone 5/SE*/
 
     body{
+        height: 600px;
+    }
+
+    #container{
+        height: 500px;
+    }
+
+    #cvImg{
+        width: 75%;
+    }
+
+    #eng{
+        margin-left: -86%;
+        margin-top: 115%;
+    }
+    
+    #ned{
+        margin-left: -86%;
+        margin-top: 135%;
+    }
+
+}
+
+@media screen and (min-width: 360px) { /*from and bigger*/ /*moto G4, Galaxy S5 */
+    body{
+        height: 650px;
+    }
+
+    #container{
+        height: 560px;
+    }
+
+    #cvImg{
+        width: 80%;
+    }
+
+    #eng{
+        margin-left: -88%;
+        margin-top: 118%;
+    }
+    
+    #ned{
+        margin-left: -88%;
+        margin-top: 135%;
+    }
+}
+
+@media screen and (min-width: 375px) { /*from and bigger Iphone 6/7/8*/ 
+
+    body{
         height: 700px;
     }
 
@@ -50,37 +100,51 @@
         height: 600px;
     }
 
+    #cvImg{
+        width: 80%;
+    }
+
 }
 
-@media screen and (min-width: 360px) { /*from and bigger*/ /*moto G4, Galaxy S5 */
+@media screen and (min-width: 411px) { /*from and bigger  Pixel 2, iphone6/7/8 plus*/ 
+
     body{
         height: 750px;
     }
 
     #container{
-        height: 650px;
+        height: 640px;
     }
+
+    #cvImg{
+        width: 80%;
+    }
+
 }
 
-@media screen and (min-width: 375px) { /*from and bigger Iphone 6/7/8*/ 
+@media screen and (min-width: 540px) { /*from and bigger Surface Duo*/ 
 
     body{
-        height: 800px;
+        height: 900px;
     }
 
     #container{
-        height: 680px;
-    }
-}
-
-@media screen and (min-width: 411px) { /*from and bigger  Pixel 2*/ 
-
-    body{
-        height: 850px;
+        height: 725px;
     }
 
-    #container{
-        height: 730px;
+    #cvImg{
+        width: 70%;
+        margin-top: 5%;
+    }
+
+    #eng{
+        margin-left: -83%;
+        margin-top: 100%;
+    }
+    
+    #ned{
+        margin-left: -83%;
+        margin-top: 115%;
     }
 
 }

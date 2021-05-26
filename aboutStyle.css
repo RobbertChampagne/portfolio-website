@@ -229,7 +229,7 @@ p {
 
 }
 
-@media screen and (min-width: 411px) { /*from and bigger  Pixel 2*/ 
+@media screen and (min-width: 411px) { /*from and bigger  Pixel 2, iphone6/7/8 plus*/ 
     
     #upperSquare{
         height: 280px;
@@ -250,5 +250,86 @@ p {
     .showLowerSquare {  /*square slides in from the right when loading page*/
         margin-left: 13%;
     }
+
+}
+
+@media screen and (min-width: 540px) { /*from and bigger Surface Duo*/ 
+
+    #container{
+        height: 1300px;
+        padding-bottom: 20%;
+    }
+
+    #upperSquare{
+        height: 400px;
+        padding: 20px;
+        width: 450px;
+    }
+
+    #TitleAboutMe{
+        font-size: 40px;
+    }
+
+    .pTextAboutMe{
+        font-size: 25px;
+    }
+    
+    #middleSquare{
+        margin-top: 110%;
+        height: 300px;
+    }
+
+    #lowerSquare{
+        margin-top: 190%;
+        height: 320px;
+        width: 450px;
+        padding: 20px;
+    }
+
+    .showUpperSquare {  /*square slides in from the left when loading page*/
+        margin-left: -2%;
+    }
+
+    .showLowerSquare {  /*square slides in from the right when loading page*/
+        margin-left: 12%;
+    }
+
+    .bigDots{
+        width: 110px;
+    }
+    
+    .middleDots{
+        width: 90px;
+    }
+    
+    .smallDots{
+        width: 65px;
+    }
+
+    #phpDot{
+        margin-top: 22%;
+        margin-left: 22%;
+    }
+    
+    #pythonDot{
+        margin-left: 35%;
+        margin-top: 3%;
+    }
+    
+    #sqlDot{
+        margin-top: 42%;
+        margin-left: 38%;
+    }
+    
+    #uiuxDot{
+        margin-top: 40%;
+        margin-left: 8%;
+    }
+    
+    #cDot{
+        margin-top: 40%;
+        margin-left: 70%;
+    }
+    
 
 }

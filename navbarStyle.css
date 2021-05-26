@@ -77,5 +77,21 @@
     }
     
 }
+ 
+@media screen and (min-width: 540px) { /*from and bigger Surface Duo*/ 
     
+    #hamburgerMenu{
+        margin-left: 85%;
+    }
+
+    #navbarDiv ul li a {
+        font-size: 28px;
+    }
+    
+    #navbarDiv ul li{
+        margin-top: 20%;
+        margin-left: -5%;
+    }
+    
+}
   

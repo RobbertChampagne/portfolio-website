@@ -1,5 +1,4 @@
 #profileImgDiv {
-  /*IMG + text shpowing*/
   width: 50%;
   position: absolute;
   z-index: 2; /*on top of blue squares*/
@@ -50,4 +49,40 @@
   margin-top: 120%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-left: -1%;
+}
+
+
+@media screen and (min-width: 540px) { /*from and bigger Surface Duo*/ 
+
+    #profileImgDiv {
+        width: 40%;
+        margin-left: 50%;
+        margin-top: 18%;
+      }
+      
+      #textDiv {
+        margin-top: 100%;
+      }
+      
+      #text {
+        font-size: 35px;
+      }
+      
+      #iam {
+        font-size: 40px;
+        margin-left: 30%;
+        margin-top: -4%;
+      }
+      
+      #upperSquare {
+        height: 30%;
+        margin-left: 15%;
+        width: 40%;
+      }
+      
+      #lowerSquare {
+        width: 105%;
+        margin-top: 95%;
+      }
+
 }
