@@ -1,60 +1,73 @@
-#profileImgDiv {
-  width: 50%;
-  position: absolute;
-  z-index: 2; /*on top of blue squares*/
-  margin-left: 40%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-top: 25%;
+@media screen and (min-width: 0px) { /*from and bigger */ 
+    #profileImgDiv {
+    width: 40%;
+    position: absolute;
+    z-index: 2; /*on top of blue squares*/
+    margin-left: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 25%;
+    }
+
+    #profileImg {
+    background-color: #f6f8f7;
+    width: 100%;
+  }
+
+    #textDiv {
+    margin-top: 135%;
+    margin-left: 2%;
+    width: 100%;
+    z-index: 2; /*on top of blue squares*/
+    position: absolute;
+    color: #777373;
+    }
+
+    #text {
+    font-size: 30px;
+    }
+
+    #iam {
+    color: black;
+    font-size: 32px;
+    margin-left: 20%;
+    }
+
+    #upperSquare {
+    background-color: #d1e4f3;
+    width: 30%;
+    height: 30vw;
+    position: absolute;
+    margin-top: 15%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 20%;
+    }
+
+    #lowerSquare {
+    background-color: #d1e4f3;
+    width: 100vw;
+    height: 20vh;
+    position: absolute;
+    margin-top: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: -1%;
+    }
 }
 
-#profileImg {
-  background-color: #f6f8f7;
-  width: 100%;
+@media screen and (min-width: 600px) { /*from and bigger*/ 
+
+    #profileImgDiv {
+        width: 320px;
+        margin-left: 40%;
+        margin-top: 25%;
+    }
+
 }
 
-#textDiv {
-  margin-top: 135%;
-  margin-left: 2%;
-  width: 100%;
-  z-index: 2; /*on top of blue squares*/
-  position: absolute;
-  color: #777373;
-}
-
-#text {
-  font-size: 30px;
-}
-
-#iam {
-  color: black;
-  font-size: 32px;
-  margin-left: 20%;
-}
-
-#upperSquare {
-  background-color: #d1e4f3;
-  height: 25%;
-  width: 50%;
-  position: absolute;
-  margin-top: 10%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-left: 5%;
-}
-
-#lowerSquare {
-  background-color: #d1e4f3;
-  width: 100%;
-  height: 200px;
-  position: absolute;
-  margin-top: 120%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-left: -1%;
-}
-
+/*
 
 @media screen and (min-width: 540px) { /*from and bigger Surface Duo*/ 
 
-    #profileImgDiv {
+   /* #profileImgDiv {
         width: 40%;
         margin-left: 50%;
         margin-top: 18%;
@@ -85,4 +98,39 @@
         margin-top: 95%;
       }
 
+}
+/*
+@media screen and (min-width: 768px) { /*from and bigger ipad*/ 
+ /*   #text {
+        font-size: 55px;
+    }
+      
+      #iam {
+        font-size: 50px;
+        margin-left: 35%;
+      }
+
+      #lowerSquare {
+        width: 105%;
+        height: 280px;
+      }
+      
+}
+
+@media screen and (min-width: 1024px) { /*from and bigger ipad Pro*/ 
+  /*  #text {
+        margin-top: 5%;
+        font-size: 60px;
+    }
+      
+      #iam {
+        font-size: 60px;
+        margin-left: 40%;
+        margin-top: 5%;
+      }
+
+      #lowerSquare {
+        width: 105%;
+        height: 350px;
+      }
 }

@@ -53,6 +53,10 @@
     text-decoration: none;
 }
 
+.projectSquare h2{
+    color: #4b6cc1;
+}
+
 .projectImg{
     width: 100%;
 }
@@ -97,6 +101,79 @@
 
     #projectContainer{
         margin-top: -2%;
+    }
+
+}
+
+@media screen and (min-width: 768px) { /*from and bigger ipad*/ 
+    
+    #portfolioTitle{
+        font-size: 60px;
+        margin-bottom: 2%;
+        margin-left: 5%;
+    }
+    
+    #filterButtons{
+        margin-left: 3%;
+    }
+    
+    .projectChoiceButtons{
+        height: 60px;
+        width: 160px;
+        font-size: 35px;
+    }
+
+    #projectContainer{
+        margin-top: -5%;
+    }
+
+    .projectSquare{
+        margin-right: 5%;
+        height: 400px;
+        width: 55%;
+    }
+
+}
+
+@media screen and (min-width: 1024px) { /*from and bigger ipad Pro*/ 
+
+    #portfolioTitle{
+        font-size: 70px;
+        margin-left: 8%;
+        margin-bottom: 2%;
+    }
+    
+    #filterButtons{
+        margin-left: 7%;
+    }
+    
+    .projectChoiceButtons{
+        height: 60px;
+        width: 160px;
+        font-size: 35px;
+    }
+
+    #projectContainer{
+        margin-top: -5%;
+        padding: 1%;
+    }
+
+    .projectSquare{
+        padding: 2%;
+        margin-bottom: 5%;
+        margin-right: 5%;
+        width: 350px;
+        height: 400px;
+    }
+
+    .projectSquare h2{ 
+        margin-bottom: 5%;
+        font-size: 36px;
+    }
+    
+    .projectSquare h4{ 
+        font-size: 28px;
+        margin-top: 0%;
     }
 
 }

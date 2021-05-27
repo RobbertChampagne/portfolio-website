@@ -61,8 +61,7 @@
     }
 }
 
-
-@media screen and (min-width: 411px) { /*from and bigger  Pixel 2*/ 
+@media screen and (min-width: 411px) { /*from and bigger  Pixel 2 XL*/ 
 
     #navbarDiv {
         width: 50%;
@@ -79,7 +78,10 @@
 }
  
 @media screen and (min-width: 540px) { /*from and bigger Surface Duo*/ 
-    
+    #navbarDiv {
+        width: 30%;
+    }
+
     #hamburgerMenu{
         margin-left: 85%;
     }
@@ -95,3 +97,37 @@
     
 }
   
+@media screen and (min-width: 768px) { /*from and bigger ipad*/ 
+
+    #hamburgerMenu{
+        width: 80px;
+        margin-left: 85%;
+    }
+
+    #navbarDiv ul li a {
+        font-size: 30px;
+    }
+    
+    #navbarDiv ul li{
+        margin-top: 20%;
+        margin-left: -2%;
+    }
+}
+
+@media screen and (min-width: 1024px) { /*from and bigger ipad Pro*/ 
+
+    #navbarDiv ul li a {
+        font-size: 40px;
+    }
+    
+    #navbarDiv ul li{
+        margin-top: 15%;
+        margin-left: -1%;
+    }
+
+}
+
+/*WEB BROWSER*/
+@media screen and (min-width: 1024px) { /*from and bigger ipad Pro*/ 
+
+}

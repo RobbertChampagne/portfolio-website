@@ -24,8 +24,8 @@
             <input type="text" name="email" placeholder="Email" class="inputfields" value="<?php echo isset($_POST['email']) ? $email : ''; ?>">
             <input type="text" name="topic" placeholder="Topic" class="inputfields" value="<?php echo isset($_POST['topic']) ? $topic : ''; ?>">
             <textarea type="text" name="message" rows="10" placeholder="Message" id="messageBox" class="inputfields" ><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
+            <br>
             <button type="submit" id="submitButton" name="sendEmail">Send</button>
-
             <?php if($msg != ''): ?> <!--show oke or error message after clicking button-->          
                 <div id="errorDiv" class="<?php echo $msgClass; ?>"> <?php echo $msg; ?>  </div>
             <?php endif; ?>

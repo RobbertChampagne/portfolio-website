@@ -296,6 +296,116 @@ body{
         margin-top: 150%;
         width: 400px;
     }
+
+    /*background when image is enlarged*/
+    #imageBg{
+        width: 105%;
+        height: 950px;
+    }
     
+}
+
+@media screen and (min-width: 768px) { /*from and bigger ipad*/ 
+
+    body{
+        height: 1750px;
+    }
+
+    #container{
+        height: 1550px;
+        width: 110%;
+    }
+
+    #back{
+        width: 10%;
+    }
+
+    #textSquare{
+        width: 600px;
+        height: 420px;
+        margin-left: 9%;
+    }
+    
+    #textSquare h2{
+        font-size: 40px;
+    }
+
+    #textSquare h4{
+        font-size: 30px;
+    }
+
+    #textSquare p{
+        font-size: 25px;
+    }
+
+    #githubButton{
+        font-size: 25px;
+    }
+
+    #leftUpImg{
+        width: 600px;
+    }
+    
+    #rightImg{
+        margin-top: 125%;
+        width: 600px;
+    }
+    
+    #leftLowerImg{
+        margin-top: 160%;
+        width: 600px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) { /*from and bigger ipad Pro*/ 
+    
+    body{
+        height: 2400px;
+    }
+
+    #container{
+        height: 2080px;
+    }
+
+    #back{
+        width: 10%;
+    }
+
+    #textSquare{
+        width: 700px;
+        height: 500px;
+        margin-left: 12%;
+    }
+
+    #textSquare h2{
+        font-size: 50px;
+    }
+
+    #textSquare h4{
+        font-size: 35px;
+    }
+
+    #textSquare p{
+        font-size: 30px;
+    }
+
+    #githubButton{
+        font-size: 40px;
+    }
+      
+    #leftUpImg{
+        width: 800px;
+    }
+    
+    #rightImg{
+        margin-top: 125%;
+        width: 800px;
+    }
+    
+    #leftLowerImg{
+        margin-top: 160%;
+        width: 800px;
+    }
 
 }

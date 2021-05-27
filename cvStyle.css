@@ -148,3 +148,43 @@
     }
 
 }
+
+@media screen and (min-width: 768px) { /*from and bigger ipad*/ 
+    body{
+        height: 1450px;
+    }
+
+    #container{
+        height: 1150px;
+    }
+
+    #cvImg{
+        width: 80%;
+        margin-top: 8%;
+    }
+
+    #eng{
+        margin-left: -88%;
+        margin-top: 118%;
+        font-size: 30px;
+    }
+    
+    #ned{
+        margin-left: -88%;
+        font-size: 30px;
+        margin-top: 132%;
+    }
+
+}
+
+@media screen and (min-width: 1024px) { /*from and bigger ipad Pro*/ 
+
+    body{
+        height: 1900px;
+    }
+
+    #container{
+        height: 1550px;
+    }
+
+}

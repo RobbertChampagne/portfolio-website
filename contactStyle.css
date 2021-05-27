@@ -130,6 +130,63 @@ body{
 }
 
 @media screen and (min-width: 540px) { /*from and bigger Surface Duo*/ 
+    
+    body{
+        height:  1200px;
+    }
+
+    #container{
+        height: 1100px;
+    }
+
+    #submitButton{
+        margin-top: 2%; 
+    }
+
+    #socialTitel{
+        margin-top: 10%;
+    }
+
+}
+
+@media screen and (min-width: 768px) { /*from and bigger ipad*/ 
+    
+    body{
+        height:  1900px;
+    }
+
+    #container{
+        height: 1700px;
+    }
+
+    #contactTitel{
+        font-size: 55px;
+        margin-bottom: 2%;
+    }
+    
+    .inputfields{
+        font-size: 30px;
+    }
+    
+    #submitButton{
+        font-size: 30px;
+    }
+    
+    #socialTitel{
+        font-size: 55px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) { /*from and bigger ipad Pro*/ 
+
+    body{
+        height:  2300px;
+    }
+
+    #container{
+        height: 2000px;
+    }
 
 
 }

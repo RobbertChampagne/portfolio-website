@@ -82,7 +82,7 @@ function loaded(){
     //when image is showing larger when clicked disable/enable scroll
     function disableScroll() {
         // Get the current page scroll position
-        scrollTop = 0 //to the top of the window
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
             // if any scroll is attempted, set this to the previous value
             window.onscroll = function() {
@@ -111,7 +111,7 @@ function loaded(){
             imageMarginTop = image.getPropertyValue("margin-top");
 
             //move image to center
-            let windowWidth = document.getElementById("body").offsetWidth + 20 ;
+            let windowWidth = document.getElementById("body").offsetWidth + 30 ;
             event.target.style.width = windowWidth + "px";
             event.target.style.marginLeft = "-3%";
             event.target.style.marginTop = "50%";

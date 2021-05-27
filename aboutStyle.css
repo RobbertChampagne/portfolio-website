@@ -331,5 +331,172 @@ p {
         margin-left: 70%;
     }
     
+}
+
+@media screen and (min-width: 768px) { /*from and bigger ipad*/ 
+    
+    #container{
+        height: 1850px;
+        padding-bottom: 20%;
+    }
+
+    #upperSquare{
+        height: 500px;
+        padding: 25px;
+        width: 650px;
+    }
+
+    #TitleAboutMe{
+        font-size: 55px;
+    }
+
+    .pTextAboutMe{
+        font-size: 35px;
+    }
+    
+    #middleSquare{
+        margin-top: 105%;
+        height: 450px;
+    }
+
+    #lowerSquare{
+        margin-top: 186%;
+        height: 450px;
+        width: 650px;
+        padding: 25px;
+    }
+
+    .showUpperSquare {  /*square slides in from the left when loading page*/
+        margin-left: -2%;
+    }
+
+    .showLowerSquare {  /*square slides in from the right when loading page*/
+        margin-left: 10%;
+    }
+
+    .bigDots{
+        width: 150px;
+    }
+    
+    .middleDots{
+        width: 110px;
+    }
+    
+    .smallDots{
+        width: 85px;
+    }
+
+    #phpDot{
+        margin-top: 25%;
+    }
+    
+    #pythonDot{
+        margin-top: 5%;
+    }
+    
+    #cDot{
+        margin-top: 44%;
+    }
+
+}
+
+@media screen and (min-width: 1024px) { /*from and bigger ipad Pro*/ 
+    
+    #container{
+        height: 2000px;
+        padding-bottom: 30%;
+    }
+
+    #upperSquare{
+        height: 600px;
+        padding-left: 40px;
+        width: 900px;
+    }
+
+    #TitleAboutMe{
+        font-size: 70px;
+    }
+
+    .pTextAboutMe{
+        font-size: 40px;
+        padding-right: 40px;
+    }
+    
+    #middleSquare{
+        width: 105%;
+        margin-top: 95%;
+        height: 450px;
+    }
+
+    #lowerSquare{
+        margin-top: 160%;
+        height: 500px;
+        width: 900px;
+        padding: 40px;
+    }
+
+    .showUpperSquare {  /*square slides in from the left when loading page*/
+        margin-left: -2%;
+    }
+
+    .showLowerSquare {  /*square slides in from the right when loading page*/
+        margin-left: 10%;
+    }
+
+    .bigDots{
+        width: 180px;
+    }
+    
+    .middleDots{
+        width: 135px;
+    }
+    
+    .smallDots{
+        width: 90px;
+    }
+
+
+    #phpDot{
+        margin-top: 15%;
+    }
+    
+    #pythonDot{
+        margin-left: 40%;
+        margin-top: 5%;
+    }
+
+    #jsDot{
+        margin-top: 25%;
+        margin-left: 45%;
+    }
+
+    #htmlDot{
+        margin-top: 5%;
+    }
+    
+    #cssDot{
+        margin-top: 6%;
+        margin-left: 63%;
+    }
+
+    #sqlDot{
+        margin-top: 35%;
+        margin-left: 30%;
+    }
+    
+    #uiuxDot{
+        margin-top: 30%;
+        margin-left: 8%;
+    }
+    
+    #cDot{
+        margin-left: 60%;
+        margin-top: 40%;
+    }
+    
+    #javaDot{
+        margin-top: 25%;
+        margin-left: 70%;
+    }
 
 }
