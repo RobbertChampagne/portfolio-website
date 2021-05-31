@@ -12,25 +12,35 @@
     <title>Robbert Champagne</title>
 </head>
 <body>
-    
     <?php include "navbar.php"; ?>
+    
 
     <div id="container">
 
+        <button id="hamburgerMenu" ><img id="hamburgerMenuImage" src="images\hamburger menu.png" alt=""></button>
+
         <div id="upperSquare"></div>
-
+        
         <div id="profileImgDiv">
-            <img id="profileImg" src="images/robbert1.png" >
-        </div>
 
-        <div id="textDiv">
+            <div id="textDiv">
                 <h2 id="text">Hello there! I'm ...</h2>
-                <h1 id="iam"></h1>
+                <h1 id="iam">&nbsp;</h1>
+            </div>
+
+            <img id="profileImg" src="images/robbert1.png" >
+
         </div>
 
         <div id="lowerSquare"></div>
 
-          
     </div>
+
+    <section>
+        <div><img src="images\phpIcon.png" alt=""></div>
+        <div><img src="images\jsIcon.png" alt=""></div>
+        <div><img src="images\pythonIcon.png" alt=""></div>
+    </section>
+    
 </body>
 </html>
