@@ -13,6 +13,8 @@
 <body>
     
     <?php include "navbar.php"; ?>
+    
+    <button id="hamburgerMenu" ><img id="hamburgerMenuImage" src="images\hamburger menu.png" alt=""></button>
 
     <div id="container">
 

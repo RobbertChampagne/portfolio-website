@@ -1,34 +1,48 @@
+#hamburgerMenu{
+    background-color: inherit;
+    width: 60px;
+    height: fit-content;
+    margin-left: 80vw;
+    margin-top: 5vw;
+    margin-bottom: 2vw;
+    outline: none !important; /*no border around button after clicking*/
+    border: none;
+}
 
 #container{
     position: absolute;
-    margin-top: 20%;
-    margin-left: -3%;
+    margin-left: 5vw;
     background-color: #D1E4F3;
     padding: 1%;
-    width: 100%;
+    width: 80vw;
 }
 
 #portfolioTitle{
-    margin-left: 1%;
+    margin-left: 1vw;
+    margin-bottom: 1vw;
     color: #4b6cc1;
+    font-size: 5vw;
 }
 
 #filterButtons{
+    margin-bottom: -5vw;
     padding-bottom: 10%;
 }
 
 .projectChoiceButtons{
     background-color: white;
     border: none;
-    margin-left: 2%;
-    height: 30px;
+    margin-right: 2vw;
+    height: 35px;
     color: grey;
     outline: none !important; /*no border around button after clicking*/
+    font-size: 3vw;
 }
 
 #showAll{
     color: white;
     background-color: #4b6cc1;
+    margin-left: 1vw;
 }
 
 #projectContainer{
@@ -36,7 +50,7 @@
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 2%;
+    padding: 5vw;
 }
 
 .projectSquare{
@@ -61,119 +75,26 @@
     width: 100%;
 }
 
-@media screen and (min-width: 320px) { /*from and bigger*/ /*iphone 5/SE*/
+
+@media (min-width:780px)  { 
 
     #portfolioTitle{
-        font-size: 40px;
-        margin-left: 2%;
-    }
-    
-    #filterButtons{
-        margin-left: 2%;
+        font-size: 39.88px;
     }
     
     .projectChoiceButtons{
-        margin-left: 2%;
-        height: 35px;
-        font-size: 18px;
+        font-size: 23.92px;
     }
 
 }
 
-@media screen and (min-width: 540px) { /*from and bigger Surface Duo*/ 
+@media (min-width:980px)  { 
     
-    #portfolioTitle{
-        font-size: 50px;
-        margin-left: 5%;
-        margin-bottom: 2%;
-    }
-    
-    #filterButtons{
-        margin-left: 4%;
-    }
-    
-    .projectChoiceButtons{
-        margin-left: 2%;
-        height: 50px;
-        width: 100px;
-        font-size: 20px;
-    }
-
     #projectContainer{
-        margin-top: -2%;
-    }
-
-}
-
-@media screen and (min-width: 768px) { /*from and bigger ipad*/ 
-    
-    #portfolioTitle{
-        font-size: 60px;
-        margin-bottom: 2%;
-        margin-left: 5%;
-    }
-    
-    #filterButtons{
-        margin-left: 3%;
-    }
-    
-    .projectChoiceButtons{
-        height: 60px;
-        width: 160px;
-        font-size: 35px;
-    }
-
-    #projectContainer{
-        margin-top: -5%;
+        justify-content: space-between;
     }
 
     .projectSquare{
-        margin-right: 5%;
-        height: 400px;
-        width: 55%;
+        gap: 12px;
     }
-
-}
-
-@media screen and (min-width: 1024px) { /*from and bigger ipad Pro*/ 
-
-    #portfolioTitle{
-        font-size: 70px;
-        margin-left: 8%;
-        margin-bottom: 2%;
-    }
-    
-    #filterButtons{
-        margin-left: 7%;
-    }
-    
-    .projectChoiceButtons{
-        height: 60px;
-        width: 160px;
-        font-size: 35px;
-    }
-
-    #projectContainer{
-        margin-top: -5%;
-        padding: 1%;
-    }
-
-    .projectSquare{
-        padding: 2%;
-        margin-bottom: 5%;
-        margin-right: 5%;
-        width: 350px;
-        height: 400px;
-    }
-
-    .projectSquare h2{ 
-        margin-bottom: 5%;
-        font-size: 36px;
-    }
-    
-    .projectSquare h4{ 
-        font-size: 28px;
-        margin-top: 0%;
-    }
-
 }
