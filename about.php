@@ -12,15 +12,25 @@
     <title>About</title>
 </head>
 <body>
+
+    <?php include "navbar.php"; ?>
+
     <div id="container">
 
-        <?php include "navbar.php"; ?>
-        
+        <button id="hamburgerMenu" ><img id="hamburgerMenuImage" src="images\hamburger menu.png" alt=""></button>
+
+        <div id="leftSideSpace"></div>
+
         <div id="upperSquare" class="hideUpperSquare">
             <h2 id="TitleAboutMe">About me</h2>                
             <p class="pTextAboutMe">Living, learning, & leveling up one day at a time.</p>
             <p class="pTextAboutMe">I like to code things from scratch, and enjoy bringing ideas to life.</p>
             <p class="pTextAboutMe">I am spending a lot of time trying to perfect what I do and while I’ll never be perfect, I do my best to come close.</p>
+            <p class="pTextAboutMe">- If you’ve got a project you’d like to work on with me?</p>
+            <p class="pTextAboutMe">- Are you looking to hire? </p>
+            <p class="pTextAboutMe">- In search for a business partner for a new startup?</p>
+            <p class="pTextAboutMe">Just get in touch and we can </p>
+            <button id="getToWorkButton"> <a href="contact.php">get to work!</a></button>
         </div>
 
         <div id="middleSquare">
@@ -35,13 +45,11 @@
             <img src="images\java.png" class="smallDots skill" id="javaDot" alt="">   
         </div>
 
-        <div id="lowerSquare" class="hideLowerSquare">
-            <p class="pTextAboutMe">- If you’ve got a project you’d like to work on with me?</p>
-            <p class="pTextAboutMe">- Are you looking to hire? </p>
-            <p class="pTextAboutMe">- In search for a business partner for a new startup?</p>
-            <p class="pTextAboutMe">Just get in touch and we can <a id="getToWorkLink" href="contact.php"><br/>get to work!</a> </p>
-        </div>
+        <div id="rightSideSpace"></div>
+
+        <div id="lowerSquare"></div>
               
     </div>
+
 </body>
 </html>

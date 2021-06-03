@@ -1,502 +1,198 @@
 
 #container{
-    height: 1000px;
-    padding-bottom: 5%;
+    height: fit-content;
+    
+    display: grid;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-columns: 2fr 2fr 3fr 2fr ;
+}
+
+#leftSideSpace{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#rightSideSpace{
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+#rightSideSpace, #leftSideSpace{
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+    height: 80vw;
+    width: 10vw;
+}
+
+#upperSquare, #middleSquare{
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+    z-index: 4; 
+
+
+}
+
+#lowerSquare{
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+    z-index: 3; 
+}
+
+#hamburgerMenu{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    background-color: inherit;
+    width: 60px;
+    height: fit-content;
+    margin-left: 42vw;
+    margin-top: 5vw;
+    margin-bottom: 10vw;
+    outline: none !important; /*no border around button after clicking*/
+    border: none;
 }
 
 #TitleAboutMe{
     color: #4b6cc1;
     margin-bottom: -2%;
-    font-size: 25px;
+    font-size: 4vw;
 }
 
 p {
-    font-size: 18px;
+    font-size: 3vw;
 }
 
 #upperSquare{
-    background-color: #D1E4F3;
-    height: 300px;
-    width: 240px;
-    position: absolute;
-    margin-top: 22%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 10px;
-    transition: .9s ease;/*sliding*/
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    background-color: #f5f5f5;
+    height: 60vw;
+    width: 35vw;
+    padding: 0 2vw 0 2vw;
+    overflow-y: scroll;
+    margin-left: -4vw;
 }
 
-.hideUpperSquare{
-    margin-left: -100%;
+#getToWorkButton{
+    border: 2px solid #D1E4F3;
+    background-color: #4b6cc1;
+    margin-bottom: 5vw;
+    margin-left: 8vw;
+    font-size: 3vw;
 }
 
-.showUpperSquare {  /*square slides in from the left when loading page*/
-    margin-left: -3%;
+#getToWorkButton a{
+    text-decoration: none;
+    color: white;
+}
+
+/*SCROLLBAR FOR UPPERSQUARE*/
+/* width */
+#upperSquare::-webkit-scrollbar {
+    width: 5px;
+}
+  
+/* Track */
+#upperSquare::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+    
+/* Handle */
+#upperSquare::-webkit-scrollbar-thumb {
+    background: #6988d8; 
+}
+    
+/* Handle on hover */
+#upperSquare::-webkit-scrollbar-thumb:hover {
+    background: #4b6cc1; 
 }
 
 #middleSquare{
+    grid-column-start: 3;
+    grid-column-end: 4;
+
     background-color: #D1E4F3;
-    width: 260px;
-    height: 280px;
-    position: absolute;
-    margin-top: 150%;
-    left: 0%;
-    padding: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+    width: 45vw;
+    height: 60vw;
 }
+
 
 #lowerSquare{
-    background-color: #D1E4F3;
-    width: 240px;
-    height: 230px;
-    position: absolute;
-    margin-top: 270%;
-    margin-bottom: 30%;
-    padding: 10px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    background-color: #4b6cc1;
+    width: 95vw;
+    height: 30vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
-    transition: .9s ease-out; /*sliding*/
+
 }
 
-.hideLowerSquare{
-    margin-left: 150%;
-}
-
-.showLowerSquare {  /*square slides in from the right when loading page*/
-    margin-left: 5%;
+.bigDots, .middleDots, .smallDots{
+    position: absolute;
+    display: none;
 }
 
 .bigDots{
-    position: absolute;
-    width: 70px;
-    display: none;
+    width: 11vw;
 }
 
 .middleDots{
-    position: absolute;
-    display: none;
-    width: 50px;
+    width: 9vw;
 }
 
 .smallDots{
-    width: 30px;
-    position: absolute;
-    display: none;
+    width: 6vw;
 }
 
 #phpDot{
-    margin-top: 30%;
-    margin-left: 15%;
+    margin-top: 27vw;
+    margin-left: 10vw;
 }
 
 #pythonDot{
-    margin-left: 30%;
-    margin-top: 5%;
+    margin-top: 14vw;
+    margin-left: 15vw;
 }
 
 #jsDot{
-    margin-top: 25%;
-    margin-left: 50%;
+    margin-top: 24vw;
+    margin-left: 25vw;
 }
 
 #htmlDot{
-    margin-top: 8%;
-    margin-left: 8%;
+    margin-top: 14vw;
+    margin-left: 28vw;
 }
 
 #cssDot{
-    margin-top: 5%;
-    margin-left: 60%;
+    margin-top: 36vw;
+    margin-left: 20vw;
 }
 
 #sqlDot{
-    margin-top: 50%;
-    margin-left: 40%;
+    margin-top: 17vw;
+    margin-left: 4vw;
 }
 
 #uiuxDot{
-    margin-top: 55%;
-    margin-left: 8%;
+    margin-top:37vw;
+    margin-left: 5vw;
 }
 
 #cDot{
-    margin-top: 55%;
-    margin-left: 70%;
+    margin-top: 10vw;
+    margin-left: 9vw;
 }
 
 #javaDot{
-    margin-top: 25%;
-    margin-left: 78%;
+    margin-top: 37vw;
+    margin-left: 30vw;
 }
 
-
-
-/*NAVBAR CSS*/
-#navbarDiv {
-    height: 170%;
-}
-
-#navbarFill{
-    height: 170%;
-}
-
-@media screen and (min-width: 320px) { /*from and bigger*/ /*iphone 5/SE*/
-   
-    #container{
-        height: 1100px;
-        padding-bottom: 5%;
-    }
-
-    #upperSquare{
-        height: 280px;
-        width: 290px;
-    }
-
-    #middleSquare{
-        width: 100%;
-        margin-top: 130%;
-        margin-left: 0%;
-    }
-    
-    #lowerSquare{
-        width: 290px;
-        height: 230px;
-        margin-top: 240%;
-        margin-bottom: 40%;
-    }
-
-    .showLowerSquare {  /*square slides in from the right when loading page*/
-        margin-left: 5%;
-    }
-
-    .bigDots{
-        width: 80px;
-    }
-    
-    .middleDots{
-        width: 60px;
-    }
-    
-    .smallDots{
-        width: 40px;
-    }
-    
-}
-
-@media screen and (min-width: 360px) { /*from and bigger*/ /*moto G4, Galaxy S5 */
-    #container{
-        height: 1100px;
-        padding-bottom: 5%;
-    }
-
-    #middleSquare{
-        margin-top: 120%;
-    }
-    
-    #lowerSquare{
-        margin-top: 220%;
-        height: 230px;
-    }
-
-    .showLowerSquare {  /*square slides in from the right when loading page*/
-        margin-left: 12%;
-    }
-
-    .bigDots{
-        width: 90px;
-    }
-    
-    .middleDots{
-        width: 70px;
-    }
-    
-    .smallDots{
-        width: 50px;
-    }
-
-}
-
-@media screen and (min-width: 375px) { /*from and bigger  Iphone 6/7/8*/ 
-    #middleSquare{
-        padding-bottom: 10%;
-    }
-
-    #lowerSquare{
-        margin-top: 225%;
-    }
-
-    .showLowerSquare {  /*square slides in from the right when loading page*/
-        margin-left: 15%;
-    }
-
-}
-
-@media screen and (min-width: 411px) { /*from and bigger  Pixel 2, iphone6/7/8 plus*/ 
-    
-    #upperSquare{
-        height: 280px;
-        padding-left: 13px;
-        width: 350px;
-    }
-    
-    #middleSquare{
-        margin-top: 105%;
-        padding-bottom: 10%;
-    }
-
-    #lowerSquare{
-        width: 350px;
-        margin-top: 195%;
-    }
-
-    .showLowerSquare {  /*square slides in from the right when loading page*/
-        margin-left: 13%;
-    }
-
-}
-
-@media screen and (min-width: 540px) { /*from and bigger Surface Duo*/ 
-
-    #container{
-        height: 1300px;
-        padding-bottom: 20%;
-    }
-
-    #upperSquare{
-        height: 400px;
-        padding: 20px;
-        width: 450px;
-    }
-
-    #TitleAboutMe{
-        font-size: 40px;
-    }
-
-    .pTextAboutMe{
-        font-size: 25px;
-    }
-    
-    #middleSquare{
-        margin-top: 110%;
-        height: 300px;
-    }
-
-    #lowerSquare{
-        margin-top: 190%;
-        height: 320px;
-        width: 450px;
-        padding: 20px;
-    }
-
-    .showUpperSquare {  /*square slides in from the left when loading page*/
-        margin-left: -2%;
-    }
-
-    .showLowerSquare {  /*square slides in from the right when loading page*/
-        margin-left: 12%;
-    }
-
-    .bigDots{
-        width: 110px;
-    }
-    
-    .middleDots{
-        width: 90px;
-    }
-    
-    .smallDots{
-        width: 65px;
-    }
-
-    #phpDot{
-        margin-top: 22%;
-        margin-left: 22%;
-    }
-    
-    #pythonDot{
-        margin-left: 35%;
-        margin-top: 3%;
-    }
-    
-    #sqlDot{
-        margin-top: 42%;
-        margin-left: 38%;
-    }
-    
-    #uiuxDot{
-        margin-top: 40%;
-        margin-left: 8%;
-    }
-    
-    #cDot{
-        margin-top: 40%;
-        margin-left: 70%;
-    }
-    
-}
-
-@media screen and (min-width: 768px) { /*from and bigger ipad*/ 
-    
-    #container{
-        height: 1850px;
-        padding-bottom: 20%;
-    }
-
-    #upperSquare{
-        height: 500px;
-        padding: 25px;
-        width: 650px;
-    }
-
-    #TitleAboutMe{
-        font-size: 55px;
-    }
-
-    .pTextAboutMe{
-        font-size: 35px;
-    }
-    
-    #middleSquare{
-        margin-top: 105%;
-        height: 450px;
-    }
-
-    #lowerSquare{
-        margin-top: 186%;
-        height: 450px;
-        width: 650px;
-        padding: 25px;
-    }
-
-    .showUpperSquare {  /*square slides in from the left when loading page*/
-        margin-left: -2%;
-    }
-
-    .showLowerSquare {  /*square slides in from the right when loading page*/
-        margin-left: 10%;
-    }
-
-    .bigDots{
-        width: 150px;
-    }
-    
-    .middleDots{
-        width: 110px;
-    }
-    
-    .smallDots{
-        width: 85px;
-    }
-
-    #phpDot{
-        margin-top: 25%;
-    }
-    
-    #pythonDot{
-        margin-top: 5%;
-    }
-    
-    #cDot{
-        margin-top: 44%;
-    }
-
-}
-
-@media screen and (min-width: 1024px) { /*from and bigger ipad Pro*/ 
-    
-    #container{
-        height: 2000px;
-        padding-bottom: 30%;
-    }
-
-    #upperSquare{
-        height: 600px;
-        padding-left: 40px;
-        width: 900px;
-    }
-
-    #TitleAboutMe{
-        font-size: 70px;
-    }
-
-    .pTextAboutMe{
-        font-size: 40px;
-        padding-right: 40px;
-    }
-    
-    #middleSquare{
-        width: 105%;
-        margin-top: 95%;
-        height: 450px;
-    }
-
-    #lowerSquare{
-        margin-top: 160%;
-        height: 500px;
-        width: 900px;
-        padding: 40px;
-    }
-
-    .showUpperSquare {  /*square slides in from the left when loading page*/
-        margin-left: -2%;
-    }
-
-    .showLowerSquare {  /*square slides in from the right when loading page*/
-        margin-left: 10%;
-    }
-
-    .bigDots{
-        width: 180px;
-    }
-    
-    .middleDots{
-        width: 135px;
-    }
-    
-    .smallDots{
-        width: 90px;
-    }
-
-
-    #phpDot{
-        margin-top: 15%;
-    }
-    
-    #pythonDot{
-        margin-left: 40%;
-        margin-top: 5%;
-    }
-
-    #jsDot{
-        margin-top: 25%;
-        margin-left: 45%;
-    }
-
-    #htmlDot{
-        margin-top: 5%;
-    }
-    
-    #cssDot{
-        margin-top: 6%;
-        margin-left: 63%;
-    }
-
-    #sqlDot{
-        margin-top: 35%;
-        margin-left: 30%;
-    }
-    
-    #uiuxDot{
-        margin-top: 30%;
-        margin-left: 8%;
-    }
-    
-    #cDot{
-        margin-left: 60%;
-        margin-top: 40%;
-    }
-    
-    #javaDot{
-        margin-top: 25%;
-        margin-left: 70%;
-    }
-
-}
