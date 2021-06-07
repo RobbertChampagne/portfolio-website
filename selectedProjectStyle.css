@@ -6,6 +6,10 @@
     border: none;
 }
 
+#hamburgerMenu{
+    display: none;
+}
+
 #container{
     position: absolute;
     margin-left: 7%;
@@ -30,6 +34,10 @@
 
 #imgSquare img{
     width:24.5vw;
+}
+
+.showImageBg{
+    background-color: #28282B;
 }
 
 #textSquare{
