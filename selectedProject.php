@@ -17,26 +17,26 @@
 
     <title>Selected Project</title>
 </head>
-<body id="body">
+<body>
 
     <?php include "navbar.php"; ?>
 
     <a href="portfolio.php"><img id="back" src="images\back.png" alt=""></a>
+    
 
     <div id="container" value=<?php echo $project ?>>
         
         <div id="textSquare"></div>
-
-        <img id="leftUpImg" class="hideLeftSlide" src="" alt=""></div>
         
-        <img id="rightImg" class="hideRightSlide" src="" alt=""></div>
-        
-        <img id="leftLowerImg" class="hideLeftSlide" src="" alt=""></div>
+        <div id="imgSquare">  
+            <img id="img_one" class="hideLeftSlide" src="" alt="">
+            <img id="img_two" class="hideRightSlide" src="" alt="">
+            <img id="img_three" class="hideLeftSlide" src="" alt="">
+        </div>
       
     </div>
 
-    <div id="imageBg" ></div>
-
+    <div id="imageBg"></div>
 </body>
 
 

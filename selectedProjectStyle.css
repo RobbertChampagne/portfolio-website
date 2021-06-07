@@ -1,411 +1,217 @@
-body{
-    height: 800px;
-    padding-bottom: 5%;
-}
-
 #back{
-    position: absolute;
-    margin-left: 5%;
-    margin-top: 6%;
-    position: absolute;
+    height: 50px;
+    margin-left: 7%;
+    margin-top: 5vw;
     outline: none !important; /*no border around button after clicking*/
     border: none;
 }
 
 #container{
     position: absolute;
-    margin-top: 20%;
-    margin-left: -2%;
+    margin-left: 7%;
     background-color: #D1E4F3;
     padding: 1%;
+    width: 80vw;
+    height: fit-content;
+    margin-top: 5vw;
+
+    display: flex;
+}
+
+#imgSquare{
+    margin-top: 5vw;
     width: 100%;
-    height: 700px;
+    height: 40vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+#imgSquare img{
+    width:24.5vw;
 }
 
 #textSquare{
-    margin-left: 7%;
-    margin-top: 60%;
-    height: 215px;
-    width: 215px;
-    font-size: 14px;
+    margin: 5vw 0.5vw 5vw 5vw;
+
+    height: 40vw;
+    width: 100%;
     background-color: #28282B;
-    position: absolute;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border:1px solid #C9AFBC;
     color: white;
     z-index: 3;
-    padding: 2%;
-    padding-bottom: 3%;
+    padding: 3%;
     text-align: center;
+}
+
+#textSquare h2 {
+    font-size: 4vw;
+}
+
+#textSquare h4 {
+    font-size: 3vw;
+}
+
+#textSquare p {
+    font-size: 2vw;
+}
+
+#textSquare p:nth-child(4){ /*move github button down*/
+    margin-bottom: 4vw;
 }
 
 #githubButton{
     text-decoration: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border:1px solid white;
-    padding-top: 3%; 
-    padding-bottom: 3%;
-    padding-left: 4%;
-    padding-right: 4%;
+    padding: 3% 4% 3% 4%;
     color: white;
 }
 
-#leftUpImg{
-    /*margin-left: 2%;*/
-    margin-top: 15%;
-    /*height: 200px;*/
-    width: 200px;
-    position: absolute;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border:1px solid #C9AFBC;
-
-    transition: .9s ease;/*sliding*/
-}
-
-#rightImg{
-   /* margin-left: 23%;*/
-    margin-top: 160%;
-    /*height: 200px;*/
-    width: 200px;
-    position: absolute;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border:1px solid #C9AFBC;
-    z-index: 2;
-
-    transition: .9s ease;/*sliding*/
-
-}
-
-#leftLowerImg{
-    /*margin-left: 2%;*/
-    margin-top: 195%;
-    /*height: 200px;*/
-    width: 200px;
-    position: absolute;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border:1px solid #C9AFBC;
-
-    transition: 0.9s ease;/*sliding*/
-
-}
-
-/*SLIDING ANIMATION*/
-.hideRightSlide{
-    margin-left: 150%;
-}
-
-.showRightSlide {  /*square slides in from the right when loading page*/
-    margin-left: 23%;
-}
-
-.hideLeftSlide{
-    margin-left: -100%;
-}
-
-.showLeftSlide {  /*square slides in from the left when loading page*/
-    margin-left: 5%;
-}
-
-
-/*background when image is enlarged*/
-#imageBg{
-    position: absolute;
-    width: 110%;
-    height: 850px;
-    background: black;
-    z-index: 3; /*on top of all*/
-    opacity: 0.8;
-    top: 0%;
-    display: none;
-}
-
-.showImageBg {
-    left: 0;
-}
-
-.hideImageBg{
-    left: -400px;
-}
-
-@media screen and (min-width: 320px) { /*from and bigger*/ /*iphone 5/SE*/
-
-    body{
-        height: 900px;
-        padding-bottom: 5%;
-    }
-
-    #container{
-        margin-left: -2%;
-        height: 800px;
-    }
+@media (max-width:500px)  { /*mobile*/
     
-    #textSquare{
-        width: 280px;
+    body{
+        margin-bottom: 320%;
+    }
+
+    #back{
+        height: 40px;
         margin-left: 2%;
-        margin-top: 50%;
-        height: 280px;
-        font-size: 18px;
-    }
-
-    #languageDesc{
-        margin-bottom: 8%;
-    }
-      
-    #leftUpImg{
-        margin-top: 10%;
-        width: 200px;
-    }
-    
-    #rightImg{
-        margin-top: 160%;
-        width: 200px;
-    }
-    
-    #leftLowerImg{
-        margin-top: 180%;
-        width: 200px;
-    }
-    
-    /*SLIDING ANIMATION*/
-
-    .showRightSlide {  /*square slides in from the right when loading page*/
-        margin-left: 33%;
-    }
-    .showLeftSlide {  /*square slides in from the left when loading page*/
-        margin-left: 3%;
-    }
-    
-    /*background when image is enlarged*/
-    #imageBg{
-        width: 110%;
-        height: 950px;
-    }
-
-}
-
-@media screen and (min-width: 360px) { /*from and bigger*/ /*moto G4, Galaxy S5 */
-
-    body{
-        height: 950px;
     }
 
     #container{
-        margin-left: -2%;
-        height: 850px;
+        flex-direction: column;
+        width: 90vw;
+        height: 300vw;
+        margin-left: 2%;
+    }
+
+    #imgSquare{
+        height: 130vw;
+        gap: 10px;
+        margin-bottom:20%;
+    }
+    
+    #imgSquare img{
+        width:90%;
     }
     
     #textSquare{
-        width: 300px;
-        margin-left: 5%;
-        margin-top: 50%;
+        margin: 10vw 4vw 3vw 3vw;
+        height: 90vw;
+        width: 85%;
+        padding: 7% 4% 0% 4%;
     }
-      
-    #leftUpImg{
-        margin-top: 10%;
-        width: 250px;
+
+    #textSquare h2 {
+        font-size: 8vw;
     }
     
-    #rightImg{
-        margin-top: 150%;
-        width: 250px;
+    #textSquare h4 {
+        font-size: 5vw;
     }
     
-    #leftLowerImg{
-        margin-top: 190%;
-        width: 250px;
+    #textSquare p {
+        font-size: 5vw;
     }
     
-    /*SLIDING ANIMATION*/
-
-    .showRightSlide {  /*square slides in from the right when loading page*/
-        margin-left: 30%;
-    }
-    
-}
-
-@media screen and (min-width: 375px) { /*from and bigger Iphone 6/7/8*/ 
-
-    body{
-        height: 1000px;
-    }
-
-    #container{
-        height: 900px;
-    }
-
-}
-
-@media screen and (min-width: 411px) { /*from and bigger  Pixel 2, iphone6/7/8 plus*/ 
-
-    #textSquare{
-        width: 350px;
-        margin-left: 4%;
-        margin-top: 50%;
-    }
-      
-    #leftUpImg{
-        margin-top: 10%;
-        width: 300px;
-    }
-    
-    #rightImg{
-        margin-top: 140%;
-        width: 300px;
-    }
-    
-    #leftLowerImg{
-        margin-top: 190%;
-        width: 300px;
-    }
-    
-    /*SLIDING ANIMATION*/
-
-    .showRightSlide {  /*square slides in from the right when loading page*/
-        margin-left: 25%;
-    }
-}
-
-@media screen and (min-width: 540px) { /*from and bigger Surface Duo*/ 
-    body{
-        height: 1300px;
-    }
-
-    #container{
-        height: 1100px;
-    }
-
-    #back{
-        width: 10%;
-    }
-
-    #textSquare{
-        width: 400px;
-        margin-left: 10%;
-    }
-      
-    #leftUpImg{
-        width: 400px;
-    }
-    
-    #rightImg{
-        margin-top: 125%;
-        width: 400px;
-    }
-    
-    #leftLowerImg{
-        margin-top: 150%;
-        width: 400px;
-    }
-
-    /*background when image is enlarged*/
-    #imageBg{
-        width: 105%;
-        height: 950px;
-    }
-    
-}
-
-@media screen and (min-width: 768px) { /*from and bigger ipad*/ 
-
-    body{
-        height: 1750px;
-    }
-
-    #container{
-        height: 1550px;
-        width: 110%;
-    }
-
-    #back{
-        width: 10%;
-    }
-
-    #textSquare{
-        width: 600px;
-        height: 420px;
-        margin-left: 9%;
-    }
-    
-    #textSquare h2{
-        font-size: 40px;
-    }
-
-    #textSquare h4{
-        font-size: 30px;
-    }
-
-    #textSquare p{
-        font-size: 25px;
+    #textSquare p:nth-child(4){ /*move github button down*/
+        margin-bottom: 8vw;
     }
 
     #githubButton{
-        font-size: 25px;
+        text-decoration: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border:1px solid white;
+        padding: 3% 4% 3% 4%;
+        color: white;
+        margin-bottom: -30%;
+    }
+    
+}
+
+@media (min-width:900px)  { 
+    
+    #back, #container{
+        margin-left: 12vw;
+    }
+    
+    #container{
+        width: 719.35px;
+        height: 494.725px;
+        padding: 8.9875px;
+        margin-top: 44.96px;
+    }   
+    
+    #imgSquare{
+        margin-top: 44.96px;
+        width: 312.375px;
+        height: 359.675px;
+    }
+    
+    #textSquare{
+        margin: 44.96px 4.496px 44.96px 44.96px;
+        height: 359.675px;
+        width: 312.375px;
+        padding: 21.575px;
     }
 
-    #leftUpImg{
-        width: 600px;
+    #imgSquare img{
+        width:220.3px;
     }
-    
-    #rightImg{
-        margin-top: 125%;
-        width: 600px;
+
+    #textSquare h2 {
+        font-size: 35.968px;
     }
-    
-    #leftLowerImg{
-        margin-top: 160%;
-        width: 600px;
+
+    #textSquare h4 {
+        font-size: 26.976px;
+    }
+
+    #textSquare p {
+        font-size: 17.984px;
+    }
+
+    #textSquare p:nth-child(4){ /*move github button down*/
+        margin-bottom: 35.968px;
     }
 
 }
 
-@media screen and (min-width: 1024px) { /*from and bigger ipad Pro*/ 
-    
-    body{
-        height: 2400px;
-    }
+@media (min-width:1000px)  { 
 
-    #container{
-        height: 2080px;
-    }
-
-    #back{
-        width: 10%;
-    }
-
-    #textSquare{
-        width: 700px;
-        height: 500px;
-        margin-left: 12%;
-    }
-
-    #textSquare h2{
-        font-size: 50px;
-    }
-
-    #textSquare h4{
-        font-size: 35px;
-    }
-
-    #textSquare p{
-        font-size: 30px;
-    }
-
-    #githubButton{
-        font-size: 40px;
-    }
-      
-    #leftUpImg{
-        width: 800px;
+    #back, #container{
+        margin-left: 15vw;
+        margin-top: 4vw;
     }
     
-    #rightImg{
-        margin-top: 125%;
-        width: 800px;
+    
+}
+
+@media (min-width:1100px)  { 
+
+    #back, #container{
+        margin-top: 3vw;
+        margin-left: 20vw;
     }
     
-    #leftLowerImg{
-        margin-top: 160%;
-        width: 800px;
-    }
+}
 
+@media (min-width:1200px)  { 
+
+    #back, #container{
+        margin-left: 22vw;
+        margin-top: 2vw;
+    }
+    
+}
+
+@media (min-width:1300px)  { 
+
+    #back, #container{
+        margin-left: 25vw;
+    }
+    
 }

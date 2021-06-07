@@ -11,17 +11,18 @@
 
 #container{
     position: absolute;
-    margin-left: 5vw;
+    margin-left: 7vw;
     background-color: #D1E4F3;
     padding: 1%;
     width: 80vw;
+    height: fit-content;
 }
 
 #portfolioTitle{
     margin-left: 1vw;
     margin-bottom: 1vw;
     color: #4b6cc1;
-    font-size: 5vw;
+    font-size: 8vw;
 }
 
 #filterButtons{
@@ -51,6 +52,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 5vw;
+    margin-bottom: -6%;
 }
 
 .projectSquare{
@@ -75,20 +77,85 @@
     width: 100%;
 }
 
-
-@media (min-width:780px)  { 
-
-    #portfolioTitle{
-        font-size: 39.88px;
+@media (max-width:500px)  { /*mobile*/
+    #hamburgerMenu{
+        margin-left: 75vw;
     }
     
+    #container{
+        margin-left: 2vw;
+        width: 90vw;
+    }
+    
+    #portfolioTitle{
+        margin-left: 3vw;
+        font-size: 11vw;
+    }
+    
+    #filterButtons{
+        margin-bottom: -5vw;
+        padding-bottom: 10%;
+        margin-left: 3vw;
+    }
+
     .projectChoiceButtons{
-        font-size: 23.92px;
+        margin-right: 2vw;
+        height: 30px;
+        font-size: 4vw;
+    }
+    
+    #showAll{
+        color: white;
+        background-color: #4b6cc1;
+        margin-left: 1vw;
+    }
+    
+    #projectContainer{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 5vw;
+        margin-bottom: -6%;
+    }
+    
+    .projectSquare{
+        background-color: white;
+        border:1px solid #C9AFBC;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 5%;
+        margin-bottom: 5%;
+        width: 270px;
+        color: grey;
+        text-decoration: none;
+    }
+    
+    .projectSquare h2{
+        color: #4b6cc1;
+    }
+    
+    .projectImg{
+        width: 100%;
     }
 
 }
 
-@media (min-width:980px)  { 
+@media (min-width:780px)  { 
+
+    #portfolioTitle{
+        font-size: 61px;
+    }
+    
+    .projectChoiceButtons{
+        font-size: 22px;
+    }
+
+}
+
+@media (min-width:965px)  { 
     
     #projectContainer{
         justify-content: space-between;
@@ -97,4 +164,58 @@
     .projectSquare{
         gap: 12px;
     }
+}
+
+@media (min-width:1020px)  { 
+
+    #container{
+        margin-left: 7vw;
+        width: 836.05px;
+    }
+
+    #projectContainer{
+        padding: 30px;
+    }
+
+}
+
+@media (min-width:1120px)  { 
+    
+    #container{
+        margin-left: 15vw;
+    }
+
+
+}
+
+@media (min-width:1220px)  { 
+    
+    #container{
+        margin-left: 20vw;
+    }
+
+}
+
+@media (min-width:1400px)  { 
+    
+    #container{
+        margin-left: 22vw;
+    }
+
+}
+
+
+/* NAVBAR*/
+
+@media (min-width:1030px)  { 
+
+    #navbarDiv {
+        width: 20vw;
+        margin-left: 0vw;
+    }
+
+    #navbarFill{
+        margin-left: 0vw;
+    }
+
 }

@@ -7,8 +7,6 @@ function loaded(){
     //enlarged image default css settings
     let imageWidth;
     let imageZIndex;
-    let imageMarginLeft; 
-    let imageMarginTop;
     
 
     //let games = {getValue: "games", title: "Games Platform", desc: "Simple game platform where games can be displayed.", sec_desc: "register/login, highscores.", third_desc:"HTML, CSS, JAVASCRIPT, PHP, SQL", img_one: "images/games/highscore.png", img_two: "images/games/register.png", img_three: "images/games/gamesoverview.png", link:"https://github.com/RobbertChampagne/simple_games_website"};
@@ -26,17 +24,17 @@ function loaded(){
         if(project.getValue === value){
             //LOAD CONTENT
             //img
-            let leftUpImg = document.getElementById("leftUpImg");
-            leftUpImg.setAttribute("src", project.img_one);
-            leftUpImg.addEventListener("click", enlargeImageWhenClickedOn);
+            let img_one = document.getElementById("img_one");
+            img_one.setAttribute("src", project.img_one);
+            img_one.addEventListener("click", enlargeImageWhenClickedOn);
 
-            let rightImg  = document.getElementById("rightImg");
-            rightImg.setAttribute("src", project.img_two);
-            rightImg.addEventListener("click", enlargeImageWhenClickedOn);
+            let img_two  = document.getElementById("img_two");
+            img_two.setAttribute("src", project.img_two);
+            img_two.addEventListener("click", enlargeImageWhenClickedOn);
 
-            let leftLowerImg = document.getElementById("leftLowerImg");
-            leftLowerImg.setAttribute("src", project.img_three);
-            leftLowerImg.addEventListener("click", enlargeImageWhenClickedOn);
+            let img_three = document.getElementById("img_three");
+            img_three.setAttribute("src", project.img_three);
+            img_three.addEventListener("click", enlargeImageWhenClickedOn);
             
             //description
             let description = document.getElementById("textSquare");
@@ -71,13 +69,6 @@ function loaded(){
         }
     }
 
-    //square sliding animations
-    document.getElementById("leftUpImg").setAttribute("class", "showLeftSlide");
-
-    document.getElementById("rightImg").setAttribute("class", "showRightSlide");
-
-    document.getElementById("leftLowerImg").setAttribute("class", "showLeftSlide");
-
 
     //when image is showing larger when clicked disable/enable scroll
     function disableScroll() {
@@ -107,14 +98,12 @@ function loaded(){
 
             imageWidth = event.target.width + "px";
             imageZIndex = event.target.style.zIndex;
-            imageMarginLeft = image.getPropertyValue("margin-left");
-            imageMarginTop = image.getPropertyValue("margin-top");
 
             //move image to center
-            let windowWidth = document.getElementById("body").offsetWidth + 30 ;
+            let windowWidth = document.getElementsByTagName("body").offsetWidth;
             event.target.style.width = windowWidth + "px";
-            event.target.style.marginLeft = "-3%";
-            event.target.style.marginTop = "50%";
+            //event.target.style.marginLeft = "-3%";
+           // event.target.style.marginTop = "50%";
             event.target.style.zIndex = "4";
 
             //add image background to cover rest of window
