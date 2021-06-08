@@ -1,23 +1,55 @@
+body{
+    padding-bottom: 120%;
+}
+
+#hamburgerMenu{
+    background-color: inherit;
+    width: 60px;
+    height: fit-content;
+    margin-left: 80vw;
+    margin-top: 5vw;
+    margin-bottom: 2vw;
+    outline: none !important; /*no border around button after clicking*/
+    border: none;
+}
+
 #container{
     position: absolute;
-    margin-top: 20%;
-    margin-left: -3%;
+    margin-left: 12vw;
     background-color: #D1E4F3;
     padding: 1%;
-    width: 100%;
-    text-align: center;
-    height: 500px;
+    width: 70vw;
+    height: fit-content;
 }
 
 #cvImg{
-    width: 90%;
-    margin: 5%;
-    margin-top: 10%;
+    width: 96%;
+    margin: 2%;
+}
+
+#downloadOverlay{
+    position: absolute;
+    opacity: 0;
+    transition: .5s ease;
+
+    margin-left: 10vw;
+    margin-top: -60vw;
+    width: 50vw;
+    height: 15vw;
+}
+
+#container:hover #cvImg {
+    opacity: 0.6;
+}
+ 
+#container:hover #downloadOverlay {
+    opacity: 1;
 }
 
 .downloadButtons{
     position: absolute;
     text-decoration: none;
+    text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border:1px solid #4b6cc1;
     padding-top: 3%; 
@@ -26,165 +58,167 @@
     padding-right: 4%;
     color: white;
     background-color: #4b6cc1;
+    width: 45.5vw;
 }
 
 #eng{
-    margin-left: -94%;
-    margin-top: 135%;
-    width: 80%;
+    margin-left: 0vw;
+    margin-top: 0vw;
 }
 
 #ned{
-    margin-left: -94%;
-    margin-top: 155%;
-    width: 80%;
+    margin-left: 0vw;
+    margin-top: 7vw;
 }
 
-@media screen and (min-width: 320px) { /*from and bigger*/ /*iphone 5/SE*/
+@media (max-width:500px)  { /*mobile*/
 
-    body{
-        height: 600px;
-    }
-
-    #container{
-        height: 500px;
-    }
-
-    #cvImg{
-        width: 75%;
-    }
-
-    #eng{
-        margin-left: -86%;
-        margin-top: 115%;
+    #hamburgerMenu{
+        margin-left: 75vw;
     }
     
-    #ned{
-        margin-left: -86%;
-        margin-top: 135%;
+    #container{
+        margin-left: 1vw;
+        width: 90vw;
+    }
+
+    #downloadOverlay{
+        margin-left: 20vw;
+        margin-top: -70vw;
     }
 
 }
 
-@media screen and (min-width: 360px) { /*from and bigger*/ /*moto G4, Galaxy S5 */
+
+@media (min-width:600px)  { 
+    
     body{
-        height: 650px;
+        padding-bottom: 720px;
     }
 
-    #container{
-        height: 560px;
-    }
-
-    #cvImg{
-        width: 80%;
-    }
-
-    #eng{
-        margin-left: -88%;
-        margin-top: 118%;
+    #hamburgerMenu{
+        margin-left: 75vw;
+        margin-top: 30px;
+        margin-bottom: 12px;
     }
     
-    #ned{
-        margin-left: -88%;
-        margin-top: 135%;
-    }
-}
-
-@media screen and (min-width: 375px) { /*from and bigger Iphone 6/7/8*/ 
-
-    body{
-        height: 700px;
-    }
-
     #container{
-        height: 600px;
+        margin-left: 12vw;
+        width: 426px;
     }
-
-    #cvImg{
-        width: 80%;
+   
+    #downloadOverlay{
+        margin-left: 60.9px;
+        margin-top: -365px;
+        width: 304.8px;
+        height: 91.43px;
     }
 
 }
 
-@media screen and (min-width: 411px) { /*from and bigger  Pixel 2, iphone6/7/8 plus*/ 
+@media (min-width:700px)  { 
 
-    body{
-        height: 750px;
+    #hamburgerMenu{
+        margin-left: 75vw;
     }
 
     #container{
-        height: 640px;
-    }
-
-    #cvImg{
-        width: 80%;
-    }
-
-}
-
-@media screen and (min-width: 540px) { /*from and bigger Surface Duo*/ 
-
-    body{
-        height: 900px;
-    }
-
-    #container{
-        height: 725px;
-    }
-
-    #cvImg{
-        width: 70%;
-        margin-top: 5%;
-    }
-
-    #eng{
-        margin-left: -83%;
-        margin-top: 100%;
+        margin-left: 18vw;
     }
     
-    #ned{
-        margin-left: -83%;
-        margin-top: 115%;
-    }
-
 }
 
-@media screen and (min-width: 768px) { /*from and bigger ipad*/ 
-    body{
-        height: 1450px;
+@media (min-width:800px)  { 
+    
+    #hamburgerMenu{
+        margin-left: 73vw;
     }
 
     #container{
-        height: 1150px;
-    }
-
-    #cvImg{
-        width: 80%;
-        margin-top: 8%;
-    }
-
-    #eng{
-        margin-left: -88%;
-        margin-top: 118%;
-        font-size: 30px;
+        margin-left: 25vw;
     }
     
-    #ned{
-        margin-left: -88%;
-        font-size: 30px;
-        margin-top: 132%;
-    }
-
 }
 
-@media screen and (min-width: 1024px) { /*from and bigger ipad Pro*/ 
+@media (min-width:900px)  { 
 
-    body{
-        height: 1900px;
+    #hamburgerMenu{
+        margin-left: 70vw;
     }
 
     #container{
-        height: 1550px;
+        margin-left: 27vw;
+    }
+    
+}
+
+@media (min-width:1000px)  { 
+
+    #hamburgerMenu{
+        margin-left: 68vw;
+    }
+
+    #container{
+        margin-left: 28vw;
+    }
+    
+}
+
+@media (min-width:1100px)  { 
+
+    #container{
+        margin-left: 31vw;
+    }
+    
+}
+
+@media (min-width:1200px)  { 
+
+    #hamburgerMenu{
+        margin-left: 65vw;
+    }
+
+    #container{
+        margin-left: 33vw;
+    }
+    
+}
+
+@media (min-width:1300px)  { 
+
+    #hamburgerMenu{
+        margin-left: 66vw;
+    }
+
+    #container{
+        margin-left: 35vw;
+    }
+    
+}
+
+@media (min-width:1400px)  { 
+    
+    #hamburgerMenu{
+        margin-left: 65vw;
+    }
+
+    #container{
+        margin-left: 37vw;
+    }
+    
+}
+
+/* NAVBAR*/
+
+@media (min-width:1030px)  { 
+
+    #navbarDiv {
+        width: 20vw;
+        margin-left: 0vw;
+    }
+
+    #navbarFill{
+        margin-left: 0vw;
     }
 
 }

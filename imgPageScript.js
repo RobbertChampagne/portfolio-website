@@ -7,18 +7,41 @@ function loaded(){
     let weightTracker = {getValue: "weightTracker", img_one: "images/weight_tracker/pic3.png", img_two: "images/weight_tracker/pic2.png", img_three: "images/weight_tracker/pic4.png"};
     let webshop = {getValue: "webshop", img_one: "images/webshop/article.png", img_two: "images/webshop/cart.png", img_three: "images/webshop/shop.png"};
 
-    let projects = [/*games, */ imageCollector, newsArticleCollector, weightTracker, webshop];
+    let projects = [imageCollector, newsArticleCollector, weightTracker, webshop];
 
     let projectValue = document.getElementById("container").getAttribute("value");
     let imgValue = document.getElementById("selectedImage").getAttribute("value");
 
     //what project to show
     for(let project of projects){
-        if(project.getValue === value){
-    
-            
-    
+        if(project.getValue === projectValue){
+            if(imgValue === "img_one"){
+                document.getElementById("selectedImage").setAttribute("src", project.img_one);
+            }else if(imgValue === "img_two"){
+                document.getElementById("selectedImage").setAttribute("src", project.img_two);
+            }else{
+                document.getElementById("selectedImage").setAttribute("src", project.img_three);
+            }
         }
+    }
+
+    document.addEventListener("click", goBack);
+
+    function goBack(){
+        console.log("goback");
+        window.location.href = "selectedProject.php?project=" + projectValue;
+    }
+
+    disableScroll();
+    
+    function disableScroll() {
+        // Get the current page scroll position
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+            // if any scroll is attempted, set this to the previous value
+            window.onscroll = function() {
+                window.scrollTo(scrollLeft, scrollTop);
+            };
     }
 
 }

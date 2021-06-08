@@ -12,13 +12,19 @@
 <body id="body">
 
     <?php include "navbar.php"; ?>
+    <button id="hamburgerMenu" ><img id="hamburgerMenuImage" src="images\hamburger menu.png" alt=""></button>
 
     <div id="container">  
         <img id="cvImg" src="images/cvdocs/cvEng.PNG" alt="" >
-        <a id="eng" class="downloadButtons" href="images\cvDocs\Robbert_Champagne_EN.docx" download>Download ENG</a>
-        <a id="ned" class="downloadButtons" href="images\cvDocs\Robbert_Champagne_NL.docx" download>Download NED</a>
+
+        <div id=downloadOverlay>
+            <a id="eng" class="downloadButtons" href="images\cvDocs\Robbert_Champagne_EN.docx" download>Download ENG</a>
+            <br>
+            <a id="ned" class="downloadButtons" href="images\cvDocs\Robbert_Champagne_NL.docx" download>Download NED</a>
+        </div>
     </div>
 
+    
 </body>
 
 </html>
