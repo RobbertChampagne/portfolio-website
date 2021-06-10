@@ -204,18 +204,3 @@
 
 }
 
-
-/* NAVBAR*/
-
-@media (min-width:1030px)  { 
-
-    #navbarDiv {
-        width: 20vw;
-        margin-left: 0vw;
-    }
-
-    #navbarFill{
-        margin-left: 0vw;
-    }
-
-}

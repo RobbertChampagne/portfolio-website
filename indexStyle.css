@@ -1,3 +1,11 @@
+#bg {
+    background-image: url("images\whitebg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
 #container{
     display: grid;
     grid-template-rows: auto 1fr;
@@ -222,24 +230,28 @@ section div img {
         width: 100%;
     }
 }
-    
-@media (min-width:501px) and (max-width:930px) { /*SECTION (PROGRAMMING ICONS)*/
+   
+
+@media (min-width:500px)  { /*SECTION (PROGRAMMING ICONS)*/
     section{
         margin-top: -4vw;
     }    
 }
 
-@media (min-width:930px)  { 
-    body{
-        position: absolute;
-        margin-left: 2vw;
+@media (min-width:900px)  { 
+    #container{
+        margin-top: -2vw;
+        position: fixed;
+        left: 50%;
+        width:834.4px;
+        margin-left: -465px;
     }
 
     #hamburgerMenu{
         width: 60px;
         margin-left: 342px;
-        margin-bottom: 68.4px;
-        margin-top: 22.8px;
+        margin-bottom: 20px;
+        margin-top: 60px;
     }
 
     #upperSquare {
@@ -283,8 +295,9 @@ section div img {
     }
     
     section{ 
-        margin-left: 100px;
-        margin-top: -30px;
+        position: absolute;
+        margin-left: 15vw;
+        margin-top: 640px;
     }
     
     section div  {
@@ -300,20 +313,30 @@ section div img {
 
 }
 
-@media (min-width:1030px)  { 
-    body{
-        margin-left: 10vw;
+@media (min-width:1100px)  { 
+    section{ 
+        margin-left: 18vw;
+        margin-top: 630px;
     }
 }
 
-@media (min-width:1130px)  { 
-    body{
-        margin-left: 15vw;
+@media (min-width:1200px)  { 
+    section{ 
+        margin-left: 22vw;
+        margin-top: 630px;
     }
 }
 
-@media (min-width:1500px)  { 
-    body{
-        margin-left: 20vw;
+@media (min-width:1300px)  { 
+    section{ 
+        margin-left: 25vw;
+        margin-top: 630px;
+    }
+}
+
+@media (min-width:1300px)  { 
+    section{ 
+        margin-left: 29vw;
+        margin-top: 630px;
     }
 }

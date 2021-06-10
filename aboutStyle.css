@@ -1,7 +1,7 @@
 
 #container{
     height: fit-content;
-    
+    margin-left: 2%;
     display: grid;
     grid-template-rows: auto 1fr 1fr;
     grid-template-columns: 2fr 2fr 3fr 2fr ;
@@ -49,8 +49,8 @@
     width: 60px;
     height: fit-content;
     margin-left: 42vw;
-    margin-top: 5vw;
-    margin-bottom: 10vw;
+    margin-top: 8vw;
+    margin-bottom: 7vw;
     outline: none !important; /*no border around button after clicking*/
     border: none;
 }
@@ -201,6 +201,7 @@ p {
         display: grid;
         grid-template-rows: auto 1fr ;
         grid-template-columns: 1fr 2fr 1fr;
+        margin: auto;
     }
 
     #leftSideSpace{
@@ -356,7 +357,7 @@ p {
     #container{
         width: 747.2px;
         height: 795px;
-        margin-left: 8%;
+        margin: auto; /*center*/
     }
 
     #rightSideSpace, #leftSideSpace{    
@@ -458,33 +459,6 @@ p {
     #javaDot{
         margin-top: 287.12px;
         margin-left: 232.8px;
-    }
-
-}
-
-@media (min-width:950px)  { 
-    #container{
-        margin-left: 18%;
-    }
-}
-
-@media (min-width:1250px)  { 
-    #container{
-        margin-left: 25%;
-    }
-}
-
-/* NAVBAR*/
-
-@media (min-width:1030px)  { 
-
-    #navbarDiv {
-        width: 20vw;
-        margin-left: 0vw;
-    }
-
-    #navbarFill{
-        margin-left: 0vw;
     }
 
 }

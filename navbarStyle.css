@@ -11,7 +11,7 @@
     z-index: 6; /*on top of fill*/
     transition: .7s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
-    opacity: 0.9;
+    opacity: 1;
     top: 0%;
 }
 
@@ -22,7 +22,7 @@
     background: #A9A9A9;
     z-index: 5; /*on top of all*/
     opacity: 0.7;
-    transition: .9s;
+    transition: .5s;
     top: 0%;
 }
 
@@ -46,77 +46,69 @@
     left: -500px;
 }
 
-
-
-@media screen and (min-width: 340px) { /*from and bigger  Pixel 2*/ 
+@media (min-width: 340px) { /*from and bigger  Pixel 2*/ 
     .hide{
         left: -500%;
     }
 }
-/*
-@media screen and (min-width: 411px) { /*from and bigger  Pixel 2 XL*/ 
-/*
+
+@media (min-width:930px)  { 
+
     #navbarDiv {
-        width: 50%;
+        width: 25vw;
+        top: -1vw;
+        margin-left: -2vw;
+
     }
     
+    #navbarFill{
+        width: 110vw;
+        height: 110vw;
+        top: -1vw;
+    }
+    
+    #navbarDiv ul li a {
+        list-style: none;
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+    }
+    
+    #navbarDiv ul li{
+        margin-left: 0vw;
+        margin-top: 5vw;
+    }
+}
+
+@media (min-width:1030px)  { 
+
+    #navbarDiv {
+        width: 20vw;
+        margin-left: 0vw;
+    }
+
+    #navbarFill{
+        margin-left: 0vw;
+    }
+
+    #navbarDiv ul li{
+        margin-top: 4vw;
+    }
+    
+}
+
+@media (min-width:1030px)  { 
+
     #navbarDiv ul li a {
         font-size: 25px;
     }
     
+}
+
+@media (min-width:1100px)  { 
+
     #navbarDiv ul li{
-        margin-left: -10%;
+        margin-top: 3vw;
     }
     
 }
- 
-@media screen and (min-width: 540px) { /*from and bigger Surface Duo*/ 
-    /*#navbarDiv {
-        width: 30%;
-    }
-
-    #hamburgerMenu{
-        margin-left: 85%;
-    }
-
-    #navbarDiv ul li a {
-        font-size: 28px;
-    }
-    
-    #navbarDiv ul li{
-        margin-top: 20%;
-        margin-left: -5%;
-    }
-    
-}
-  
-@media screen and (min-width: 768px) { /*from and bigger ipad*/ 
-/*
-    #hamburgerMenu{
-        width: 80px;
-        margin-left: 85%;
-    }
-
-    #navbarDiv ul li a {
-        font-size: 30px;
-    }
-    
-    #navbarDiv ul li{
-        margin-top: 20%;
-        margin-left: -2%;
-    }
-}
-
-@media screen and (min-width: 1024px) { /*from and bigger ipad Pro*/ 
-/*
-    #navbarDiv ul li a {
-        font-size: 40px;
-    }
-    
-    #navbarDiv ul li{
-        margin-top: 15%;
-        margin-left: -1%;
-    }
-
-}
-

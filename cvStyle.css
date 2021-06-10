@@ -74,7 +74,7 @@ body{
 @media (max-width:500px)  { /*mobile*/
 
     #hamburgerMenu{
-        margin-left: 75vw;
+        margin-left: 79vw;
     }
     
     #container{
@@ -86,9 +86,7 @@ body{
         margin-left: 20vw;
         margin-top: -70vw;
     }
-
 }
-
 
 @media (min-width:600px)  { 
     
@@ -97,13 +95,14 @@ body{
     }
 
     #hamburgerMenu{
-        margin-left: 75vw;
+        margin-left: 80vw;
         margin-top: 30px;
         margin-bottom: 12px;
     }
     
     #container{
-        margin-left: 12vw;
+        left: 50%;
+        margin-left: -213px;
         width: 426px;
     }
    
@@ -114,16 +113,19 @@ body{
         height: 91.43px;
     }
 
+    .downloadButtons{
+        width: 272.9px;
+    }
+
+    #ned{
+        margin-top: 41.9px;
+    }
 }
 
 @media (min-width:700px)  { 
 
     #hamburgerMenu{
-        margin-left: 75vw;
-    }
-
-    #container{
-        margin-left: 18vw;
+        margin-left: 76vw;
     }
     
 }
@@ -132,10 +134,6 @@ body{
     
     #hamburgerMenu{
         margin-left: 73vw;
-    }
-
-    #container{
-        margin-left: 25vw;
     }
     
 }
@@ -146,28 +144,12 @@ body{
         margin-left: 70vw;
     }
 
-    #container{
-        margin-left: 27vw;
-    }
-    
 }
 
 @media (min-width:1000px)  { 
 
     #hamburgerMenu{
         margin-left: 68vw;
-    }
-
-    #container{
-        margin-left: 28vw;
-    }
-    
-}
-
-@media (min-width:1100px)  { 
-
-    #container{
-        margin-left: 31vw;
     }
     
 }
@@ -177,48 +159,7 @@ body{
     #hamburgerMenu{
         margin-left: 65vw;
     }
-
-    #container{
-        margin-left: 33vw;
-    }
     
 }
 
-@media (min-width:1300px)  { 
 
-    #hamburgerMenu{
-        margin-left: 66vw;
-    }
-
-    #container{
-        margin-left: 35vw;
-    }
-    
-}
-
-@media (min-width:1400px)  { 
-    
-    #hamburgerMenu{
-        margin-left: 65vw;
-    }
-
-    #container{
-        margin-left: 37vw;
-    }
-    
-}
-
-/* NAVBAR*/
-
-@media (min-width:1030px)  { 
-
-    #navbarDiv {
-        width: 20vw;
-        margin-left: 0vw;
-    }
-
-    #navbarFill{
-        margin-left: 0vw;
-    }
-
-}
