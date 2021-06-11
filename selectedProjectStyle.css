@@ -1,3 +1,11 @@
+html {
+    background-image: url("images/bg7.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
 #back{
     height: 50px;
     margin-left: 7%;
@@ -80,6 +88,10 @@
 
 @media (max-width:500px)  { /*mobile*/
     
+    html {
+        height: 150%;
+    }
+
     body{
         margin-bottom: 320%;
     }
@@ -141,17 +153,25 @@
     
 }
 
-@media (min-width:900px)  { 
+
+@media (min-width:800px)  { 
     
-    #back, #container{
-        margin-left: 12vw;
+    #back{
+        position: absolute;
+        left: 0%;
+        margin-top: 30px;
+    }
+    
+    #container{
+        left: 50%;
+        margin-left: -359.675px;
     }
     
     #container{
         width: 719.35px;
         height: 494.725px;
         padding: 8.9875px;
-        margin-top: 44.96px;
+        margin-top: 110px;
     }   
     
     #imgSquare{
@@ -187,40 +207,4 @@
         margin-bottom: 35.968px;
     }
 
-}
-
-@media (min-width:1000px)  { 
-
-    #back, #container{
-        margin-left: 15vw;
-        margin-top: 4vw;
-    }
-    
-    
-}
-
-@media (min-width:1100px)  { 
-
-    #back, #container{
-        margin-top: 3vw;
-        margin-left: 20vw;
-    }
-    
-}
-
-@media (min-width:1200px)  { 
-
-    #back, #container{
-        margin-left: 22vw;
-        margin-top: 2vw;
-    }
-    
-}
-
-@media (min-width:1300px)  { 
-
-    #back, #container{
-        margin-left: 25vw;
-    }
-    
 }

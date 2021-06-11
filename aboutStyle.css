@@ -1,3 +1,10 @@
+html {
+    background-image: url("images/bg7.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
 
 #container{
     height: fit-content;
@@ -130,7 +137,6 @@ p {
     width: 95vw;
     height: 30vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
-
 }
 
 .bigDots, .middleDots, .smallDots{
@@ -196,6 +202,10 @@ p {
 }
 
 @media (max-width:500px)  { /*mobile*/
+    
+    html {
+        height: 170%;
+    }
 
     #container{
         display: grid;
@@ -383,7 +393,7 @@ p {
     #hamburgerMenu{
         margin-left: 325.92px;
         margin-top: 38.8px;
-        margin-bottom: 77.6px;
+        margin-bottom: 35px;
     }
 
     #TitleAboutMe{
@@ -463,5 +473,10 @@ p {
 
 }
 
+@media (min-width:1200px)  { 
 
+    #lowerSquare{
+        margin-left: -0.5vw;
+    }
 
+}

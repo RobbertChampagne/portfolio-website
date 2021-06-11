@@ -1,5 +1,5 @@
-#bg {
-    background-image: url("images\whitebg.jpg");
+html {
+    background-image: url("images/bg7.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -121,7 +121,12 @@ section div img {
 }
 
 
-@media (max-width:500px)  { /*mobile*/
+@media (max-width:499px)  { /*mobile*/
+
+    html {
+        height: 130%;
+    }
+
     #container{
         display: grid;
         grid-template-rows: auto 1fr 1fr;
