@@ -3,7 +3,7 @@ window.addEventListener("load", loaded);
 
 function loaded(){
  
-    //SHOW TEXT FIRST
+    //SHOW TEXT
     let count = 0;
     let timer = setInterval(tick, 1500);
     function tick(){
@@ -26,7 +26,6 @@ function loaded(){
         }
     }
     
-    //create a new h7 element so fadein works again everytime
     function createTxt(content){
         let iam = document.getElementById("iam");
 

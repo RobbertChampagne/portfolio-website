@@ -110,7 +110,7 @@ html {
     
     #socialTitel{
         margin-bottom: 2%;
-        font-size: 36px;
+        font-size: 32px;
     }
     
     .socialmediaIcons{
@@ -127,7 +127,6 @@ html {
 
 @media (min-width:800px)  { 
 
-    
     #hamburgerMenu{
         margin-left: 80vw;
         margin-top: 39px;
@@ -212,142 +211,3 @@ html {
     
 }
 
-
-/*
-@media screen and (min-width: 320px) { /*from and bigger*/ /*iphone 5/SE*/
-/*
-    body{
-        height: 1000px;
-        padding-bottom: 5%;
-    }
-
-    #container{
-        height: 900px;
-    }
-
-    #contactTitel{
-        font-size: 40px;
-        margin-bottom: 2%;
-    }
-    
-    .inputfields{
-        width: 80%;
-        margin-top: 2%;
-    }
-    
-    #submitButton{
-        padding-top: 2%; 
-        padding-bottom: 2%;
-        font-size: 18px;
-    }
-    
-    #socialTitel{
-        margin-bottom: 2%;
-        font-size: 38px;
-    }
-    
-    .socialmediaIcons{
-        width: 15%;
-        margin-right: 5%;
-    }
-    
-    #mapImg{
-        width: 90%;
-        margin-left: 1%;
-    }
-
-}
-
-@media screen and (min-width: 375px) { /*from and bigger Iphone 6/7/8*/ 
-/*
-    body{
-        height: 1000px;
-        padding-bottom: 5%;
-    }
-
-    #container{
-        height: 900px;
-    }
-
-    #socialTitel{
-        margin-top: 10%;
-    }
-
-    #mapImg{
-        margin-top: 13%;
-    }
-}
-
-@media screen and (min-width: 411px) { /*from and bigger  Pixel 2, iphone6/7/8 plus*/ 
-/*
-    body{
-        height:  1100px;
-    }
-
-    #container{
-        height: 1000px;
-    }
-
-}
-
-@media screen and (min-width: 540px) { /*from and bigger Surface Duo*/ 
-   /* 
-    body{
-        height:  1200px;
-    }
-
-    #container{
-        height: 1100px;
-    }
-
-    #submitButton{
-        margin-top: 2%; 
-    }
-
-    #socialTitel{
-        margin-top: 10%;
-    }
-
-}
-
-@media screen and (min-width: 768px) { /*from and bigger ipad*/ 
-    /*
-    body{
-        height:  1900px;
-    }
-
-    #container{
-        height: 1700px;
-    }
-
-    #contactTitel{
-        font-size: 55px;
-        margin-bottom: 2%;
-    }
-    
-    .inputfields{
-        font-size: 30px;
-    }
-    
-    #submitButton{
-        font-size: 30px;
-    }
-    
-    #socialTitel{
-        font-size: 55px;
-    }
-
-}
-
-@media screen and (min-width: 1024px) { /*from and bigger ipad Pro*/ 
-/*
-    body{
-        height:  2300px;
-    }
-
-    #container{
-        height: 2000px;
-    }
-
-
-}

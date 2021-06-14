@@ -6,8 +6,9 @@ function loaded(){
     let newsArticleCollector = {getValue: "newsArticleCollector", img_one: "images/news_article_collector/output.png", img_two: "images/news_article_collector/search_article_1.png", img_three: "images/news_article_collector/search_article.png"};
     let weightTracker = {getValue: "weightTracker", img_one: "images/weight_tracker/pic3.png", img_two: "images/weight_tracker/pic2.png", img_three: "images/weight_tracker/pic4.png"};
     let webshop = {getValue: "webshop", img_one: "images/webshop/article.png", img_two: "images/webshop/cart.png", img_three: "images/webshop/shop.png"};
+    let portfolio = {getValue: "portfolio", title: "Portfolio", desc: "Simple portfolio website.", sec_desc: "", third_desc:"PHP, HTML, CSS, JAVASCRIPT", img_one: "images/portfolioimg/index.svg", img_two: "images/portfolioimg/contact.svg", img_three: "images/portfolioimg/projects.svg", link:"https://github.com/RobbertChampagne/portfolio-website"};
 
-    let projects = [imageCollector, newsArticleCollector, weightTracker, webshop];
+    let projects = [imageCollector, newsArticleCollector, weightTracker, webshop, portfolio];
 
     let projectValue = document.getElementById("container").getAttribute("value");
     let imgValue = document.getElementById("selectedImage").getAttribute("value");

@@ -7,8 +7,9 @@ function loaded(){
     let newsArticleCollector = {getValue: "newsArticleCollector", title: "News Article Collector", desc: "Simple GUi to get the search link of news articles.", sec_desc: "", third_desc:"PYTHON, TKINTER, SELENIUM", img_one: "images/news_article_collector/output.png", img_two: "images/news_article_collector/search_article_1.png", img_three: "images/news_article_collector/search_article.png", link:"https://github.com/RobbertChampagne/News_Article_Web_Scraper"};
     let weightTracker = {getValue: "weightTracker", title: "Weight Tracker", desc: "Simple GUi to track weight.", sec_desc: "", third_desc:"PYTHON, TKINTER, MATPLOTLIB", img_one: "images/weight_tracker/pic3.png", img_two: "images/weight_tracker/pic2.png", img_three: "images/weight_tracker/pic4.png", link:"https://github.com/RobbertChampagne/weight_tracker_app"};
     let webshop = {getValue: "webshop", title: "Webshop", desc: "Standard webshop.", sec_desc: "register/login, place orders, ...", third_desc:"PHP, HTML, CSS, JAVASCRIPT, SQLITE", img_one: "images/webshop/article.png", img_two: "images/webshop/cart.png", img_three: "images/webshop/shop.png", link:"https://github.com/RobbertChampagne/donut_webshop"};
+    let portfolio = {getValue: "portfolio", title: "Portfolio", desc: "Simple portfolio website.", sec_desc: "", third_desc:"PHP, HTML, CSS, JAVASCRIPT", img_one: "images/portfolioimg/index.svg", img_two: "images/portfolioimg/contact.svg", img_three: "images/portfolioimg/projects.svg", link:"https://github.com/RobbertChampagne/portfolio-website"};
     
-    let projects = [/*games, */ imageCollector, newsArticleCollector, weightTracker, webshop];
+    let projects = [/*games, */ imageCollector, newsArticleCollector, weightTracker, webshop, portfolio];
 
     let value = document.getElementById("container").getAttribute("value");
 

@@ -21,7 +21,7 @@
 
         <div id="leftSideSpace"></div>
 
-        <div id="upperSquare" class="hideUpperSquare">
+        <div id="leftSquare">
             <h2 id="TitleAboutMe">About me</h2>                
             <p class="pTextAboutMe">Living, learning, & leveling up one day at a time.</p>
             <p class="pTextAboutMe">I like to code things from scratch, and enjoy bringing ideas to life.</p>

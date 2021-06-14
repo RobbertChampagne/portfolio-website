@@ -23,20 +23,20 @@
 
     <a href="portfolio.php"><img id="back" src="images\back.png" alt=""></a>
     
+    <button id="hamburgerMenu" ><img id="hamburgerMenuImage" src="images\hamburger menu.png" alt=""></button>
 
     <div id="container" value=<?php echo $project ?>>
         
         <div id="textSquare"></div>
         
         <div id="imgSquare">  
-            <img id="img_one" class="hideLeftSlide" src="" alt="">
-            <img id="img_two" class="hideRightSlide" src="" alt="">
-            <img id="img_three" class="hideLeftSlide" src="" alt="">
+            <a href="imgPage.php?image=img_one&project=<?php echo $project ?>"><img id="img_one" class="hideLeftSlide" src="" alt=""></a>
+            <a href="imgPage.php?image=img_two&project=<?php echo $project ?>"><img id="img_two" class="hideRightSlide" src="" alt=""></a>
+            <a href="imgPage.php?image=img_three&project=<?php echo $project ?>"><img id="img_three" class="hideLeftSlide" src="" alt=""></a>
         </div>
       
     </div>
 
-    <div id="imageBg"></div>
 </body>
 
 

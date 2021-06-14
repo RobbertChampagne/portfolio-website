@@ -57,6 +57,12 @@
                 <h4 class="projectDescription">Standard webshop.</h4>
             </a>
 
+            <a class="projectSquare" value="phpFilter" href="selectedProject.php?project=portfolio">
+                <img class="projectImg" src="images\portfolioimg\index.svg" alt="">
+                <h2 class="projectTitle">Portfolio</h2>
+                <h4 class="projectDescription">Simple portfolio website.</h4>
+            </a>
+
         </div>
           
     </div>
